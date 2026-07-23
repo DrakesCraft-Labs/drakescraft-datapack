@@ -5,12 +5,16 @@
     "bold": true,
     "color": "gold"
   },
-  "body": "Tienes un rango especial activo en DrakesCraft. Estos son tus comandos exclusivos. Cuidado con abusar de ellos:",
+  "body": [
+    "Tienes un rango especial activo en DrakesCraft. Estos son tus comandos exclusivos. Cuidado con abusar de ellos:"
+  ],
   "inputs": [
     {
       "type": "minecraft:text",
       "key": "new_nickname",
-      "label": "Cambiar Apodo (/nick):"
+      "label": {
+        "text": "Cambiar Apodo (/nick):"
+      }
     }
   ],
   "buttons": [

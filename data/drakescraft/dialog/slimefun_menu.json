@@ -5,7 +5,9 @@
     "bold": true,
     "color": "green"
   },
-  "body": "Accede a la guía tecnológica, recetas y estadísticas de Slimefun:",
+  "body": [
+    "Accede a la guía tecnológica, recetas y estadísticas de Slimefun:"
+  ],
   "buttons": [
     {
       "label": {

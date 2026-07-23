@@ -5,17 +5,23 @@
     "bold": true,
     "color": "red"
   },
-  "body": "Herramientas de moderación y administración (Requiere permisos en LuckPerms):",
+  "body": [
+    "Herramientas de moderación y administración (Requiere permisos en LuckPerms):"
+  ],
   "inputs": [
     {
       "type": "minecraft:text",
       "key": "target_player",
-      "label": "Jugador Objetivo:"
+      "label": {
+        "text": "Jugador Objetivo:"
+      }
     },
     {
       "type": "minecraft:text",
       "key": "reason_time",
-      "label": "Razón / Tiempo:"
+      "label": {
+        "text": "Razón / Tiempo:"
+      }
     }
   ],
   "buttons": [

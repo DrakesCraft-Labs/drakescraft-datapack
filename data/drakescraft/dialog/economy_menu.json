@@ -5,12 +5,16 @@
     "bold": true,
     "color": "gold"
   },
-  "body": "Administra tus monedas, compra, vende y revisa los más ricos:",
+  "body": [
+    "Administra tus monedas, compra, vende y revisa los más ricos:"
+  ],
   "inputs": [
     {
       "type": "minecraft:text",
       "key": "price",
-      "label": "Precio para Subastar Ítem en Mano (/ah sell):"
+      "label": {
+        "text": "Precio para Subastar Ítem en Mano (/ah sell):"
+      }
     }
   ],
   "buttons": [

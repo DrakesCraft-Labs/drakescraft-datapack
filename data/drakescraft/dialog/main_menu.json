@@ -5,7 +5,9 @@
     "bold": true,
     "color": "gold"
   },
-  "body": "Selecciona una categoría para acceder a todos tus comandos y herramientas:",
+  "body": [
+    "Selecciona una categoría para acceder a todos tus comandos y herramientas:"
+  ],
   "buttons": [
     {
       "label": {

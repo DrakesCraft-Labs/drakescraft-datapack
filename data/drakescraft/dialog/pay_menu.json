@@ -5,17 +5,23 @@
     "bold": true,
     "color": "green"
   },
-  "body": "Ingresa el nombre del jugador y el monto a enviar:",
+  "body": [
+    "Ingresa el nombre del jugador y el monto a enviar:"
+  ],
   "inputs": [
     {
       "type": "minecraft:text",
       "key": "player_name",
-      "label": "Nombre del Jugador:"
+      "label": {
+        "text": "Nombre del Jugador:"
+      }
     },
     {
       "type": "minecraft:text",
       "key": "amount",
-      "label": "Monto / Cantidad:"
+      "label": {
+        "text": "Monto / Cantidad:"
+      }
     }
   ],
   "buttons": [

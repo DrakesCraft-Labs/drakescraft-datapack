@@ -5,17 +5,23 @@
     "bold": true,
     "color": "dark_purple"
   },
-  "body": "Configura las banderas principales de tu terreno de protección:",
+  "body": [
+    "Configura las banderas principales de tu terreno de protección:"
+  ],
   "inputs": [
     {
       "type": "minecraft:text",
       "key": "greeting_msg",
-      "label": "Mensaje de Bienvenida (/ps flag greeting):"
+      "label": {
+        "text": "Mensaje de Bienvenida (/ps flag greeting):"
+      }
     },
     {
       "type": "minecraft:text",
       "key": "farewell_msg",
-      "label": "Mensaje de Despedida (/ps flag farewell):"
+      "label": {
+        "text": "Mensaje de Despedida (/ps flag farewell):"
+      }
     }
   ],
   "buttons": [

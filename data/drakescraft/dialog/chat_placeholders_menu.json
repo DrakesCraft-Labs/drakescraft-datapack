@@ -5,7 +5,9 @@
     "bold": true,
     "color": "light_purple"
   },
-  "body": "Presiona un botón para mostrar rápidamente tus estadísticas o ítems a todos en el chat:",
+  "body": [
+    "Presiona un botón para mostrar rápidamente tus estadísticas o ítems a todos en el chat:"
+  ],
   "buttons": [
     {
       "label": {

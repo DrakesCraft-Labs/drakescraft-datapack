@@ -47,6 +47,43 @@ The **DrakesCraft DataPack** utilizes Minecraft 1.21.11's native **Dialogs** eng
 
 ---
 
+## ⚙️ Mojang 1.21.11 Dialog Codec Specification
+
+The dialog files in this DataPack strictly follow Mojang's 1.21.11 native `DialogBody` map codec specification:
+
+```json
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "🐉 Menu Title",
+    "bold": true,
+    "color": "gold"
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Menu description or instructions here."
+    }
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "input_key",
+      "label": {
+        "text": "Input Label:"
+      }
+    }
+  ],
+  "buttons": [ ... ]
+}
+```
+
+* **`type`**: Must be `"minecraft:notice"`.
+* **`body`**: Uses `"type": "minecraft:plain_message"` registered in `dialog_body_type` with `"contents"` text component object.
+* **`inputs`**: Requires `"type": "minecraft:text"` on input control elements.
+
+---
+
 <div align="center">
 
 **DrakesCraft Labs** · Chile · Led by [**JackStar6677-1**](https://github.com/JackStar6677-1)

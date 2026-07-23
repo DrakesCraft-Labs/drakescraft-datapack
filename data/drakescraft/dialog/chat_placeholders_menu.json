@@ -71,7 +71,7 @@
         "text": "⬅ Volver a Utilidades"
       },
       "action": {
-        "type": "minecraft:change_page",
+        "type": "minecraft:show_dialog",
         "dialog": "drakescraft:utilities_menu"
       }
     }

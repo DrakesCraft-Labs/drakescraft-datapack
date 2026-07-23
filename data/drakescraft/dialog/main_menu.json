@@ -5,55 +5,62 @@
     "bold": true,
     "color": "gold"
   },
+  "external_title": {
+    "text": "DrakesCraft",
+    "color": "gold"
+  },
+  "columns": 2,
+  "pause": false,
   "body": {
     "type": "minecraft:plain_message",
+    "width": 360,
     "contents": {
-      "text": "Selecciona una categoría para acceder a todos tus comandos y herramientas:"
+      "text": "Accesos rápidos del servidor"
     }
   },
   "actions": [
     {
       "label": {
-        "text": "🏠 Casas y Teletransporte"
+        "text": "🏠 Teletransporte"
       },
       "action": {
-        "type": "minecraft:change_page",
+        "type": "minecraft:show_dialog",
         "dialog": "drakescraft:teleport_menu"
       }
     },
     {
       "label": {
-        "text": "🛡️ Protecciones y Terrenos (/ps)"
+        "text": "🛡️ Protecciones"
       },
       "action": {
-        "type": "minecraft:change_page",
+        "type": "minecraft:show_dialog",
         "dialog": "drakescraft:protection_menu"
       }
     },
     {
       "label": {
-        "text": "💰 Economía, Pagos y Subastas"
+        "text": "💰 Economía"
       },
       "action": {
-        "type": "minecraft:change_page",
+        "type": "minecraft:show_dialog",
         "dialog": "drakescraft:economy_menu"
       }
     },
     {
       "label": {
-        "text": "🎁 Kits, Recompensas y Votos"
+        "text": "🎁 Kits y votos"
       },
       "action": {
-        "type": "minecraft:change_page",
+        "type": "minecraft:show_dialog",
         "dialog": "drakescraft:kits_menu"
       }
     },
     {
       "label": {
-        "text": "⚡ Utilidades y Herramientas"
+        "text": "⚡ Utilidades"
       },
       "action": {
-        "type": "minecraft:change_page",
+        "type": "minecraft:show_dialog",
         "dialog": "drakescraft:utilities_menu"
       }
     },
@@ -62,26 +69,17 @@
         "text": "🧪 Slimefun"
       },
       "action": {
-        "type": "minecraft:change_page",
+        "type": "minecraft:show_dialog",
         "dialog": "drakescraft:slimefun_menu"
       }
     },
     {
       "label": {
-        "text": "⭐ Beneficios de Rango (VIP / OldSchool)"
+        "text": "⭐ Rangos"
       },
       "action": {
-        "type": "minecraft:change_page",
+        "type": "minecraft:show_dialog",
         "dialog": "drakescraft:rank_menu"
-      }
-    },
-    {
-      "label": {
-        "text": "👑 Panel de Staff / Moderación"
-      },
-      "action": {
-        "type": "minecraft:change_page",
-        "dialog": "drakescraft:staff_menu"
       }
     }
   ]

@@ -47,13 +47,14 @@ The **DrakesCraft DataPack** utilizes Minecraft 1.21.11's native **Dialogs** eng
 
 ---
 
-## ⚙️ Mojang 1.21.11 Dialog Codec Specification
+## ⚙️ Mojang 1.21.11 Dialog Codec
 
-The dialog files in this DataPack strictly follow Mojang's 1.21.11 native `DialogBody` map codec specification:
+The pack targets data pack format `94.1`. Menus use `minecraft:multi_action`,
+`actions`, and `minecraft:show_dialog` for navigation:
 
 ```json
 {
-  "type": "minecraft:notice",
+  "type": "minecraft:multi_action",
   "title": {
     "text": "🐉 Menu Title",
     "bold": true,
@@ -74,13 +75,21 @@ The dialog files in this DataPack strictly follow Mojang's 1.21.11 native `Dialo
       }
     }
   ],
-  "buttons": [ ... ]
+  "actions": [
+    {
+      "label": {"text": "Open economy"},
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "drakescraft:economy_menu"
+      }
+    }
+  ]
 }
 ```
 
-* **`type`**: Must be `"minecraft:notice"`.
-* **`body`**: Uses `"type": "minecraft:plain_message"` registered in `dialog_body_type` with `"contents"` text component object.
-* **`inputs`**: Requires `"type": "minecraft:text"` on input control elements.
+Run `python scripts/validate_datapack.py` before deployment. The validator checks
+pack version, JSON structure, input keys, action payloads, and every internal
+dialog reference.
 
 ---
 

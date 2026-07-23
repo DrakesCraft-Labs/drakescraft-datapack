@@ -123,7 +123,7 @@
         "text": "⬅ Volver a Protecciones"
       },
       "action": {
-        "type": "minecraft:change_page",
+        "type": "minecraft:show_dialog",
         "dialog": "drakescraft:protection_menu"
       }
     }

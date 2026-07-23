@@ -132,7 +132,7 @@
         "text": "⬅ Volver al Menú Principal"
       },
       "action": {
-        "type": "minecraft:change_page",
+        "type": "minecraft:show_dialog",
         "dialog": "drakescraft:main_menu"
       }
     }

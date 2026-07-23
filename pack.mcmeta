@@ -1,6 +1,7 @@
 {
   "pack": {
-    "pack_format": 61,
+    "min_format": [94, 1],
+    "max_format": [94, 1],
     "description": "DrakesCraft Native Pause Menu DataPack (Purpur 1.21.11)"
   }
 }

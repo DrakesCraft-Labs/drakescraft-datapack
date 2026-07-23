@@ -33,7 +33,7 @@
         "text": "💬 Compartir Ítems y Stats en Chat ([i], [inv], [ping])"
       },
       "action": {
-        "type": "minecraft:change_page",
+        "type": "minecraft:show_dialog",
         "dialog": "drakescraft:chat_placeholders_menu"
       }
     },
@@ -114,7 +114,7 @@
         "text": "⬅ Volver al Menú Principal"
       },
       "action": {
-        "type": "minecraft:change_page",
+        "type": "minecraft:show_dialog",
         "dialog": "drakescraft:main_menu"
       }
     }

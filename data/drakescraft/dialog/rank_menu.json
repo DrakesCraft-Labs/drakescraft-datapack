@@ -3,10 +3,12 @@
   "title": {
     "text": "⭐ RANGOS ESPECIALES (VIP / OldSchool)",
     "bold": true,
-    "color": "gold"
+    "color": "gold",
+    "type": "text"
   },
   "body": [
     {
+      "type": "text",
       "text": "Tienes un rango especial activo en DrakesCraft. Estos son tus comandos exclusivos. Cuidado con abusar de ellos:"
     }
   ],
@@ -20,7 +22,8 @@
   "buttons": [
     {
       "label": {
-        "text": "🕊️ Activar / Desactivar Vuelo Personal (/fly)"
+        "text": "🕊️ Activar / Desactivar Vuelo Personal (/fly)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -29,7 +32,8 @@
     },
     {
       "label": {
-        "text": "🎩 Poner Ítem de la Mano como Sombrero (/hat)"
+        "text": "🎩 Poner Ítem de la Mano como Sombrero (/hat)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -38,7 +42,8 @@
     },
     {
       "label": {
-        "text": "🍖 Restaurar Hambre y Comida (/feed)"
+        "text": "🍖 Restaurar Hambre y Comida (/feed)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -47,7 +52,8 @@
     },
     {
       "label": {
-        "text": "❤️ Restaurar Salud Completa (/heal)"
+        "text": "❤️ Restaurar Salud Completa (/heal)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -56,7 +62,8 @@
     },
     {
       "label": {
-        "text": "🔨 Abrir Yunque Portátil (/anvil)"
+        "text": "🔨 Abrir Yunque Portátil (/anvil)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -65,7 +72,8 @@
     },
     {
       "label": {
-        "text": "👁️ Detectar Jugadores Cercanos (/near)"
+        "text": "👁️ Detectar Jugadores Cercanos (/near)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -74,7 +82,8 @@
     },
     {
       "label": {
-        "text": "☀️ Cambiar Hora Personal (/ptime day/night)"
+        "text": "☀️ Cambiar Hora Personal (/ptime day/night)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -83,7 +92,8 @@
     },
     {
       "label": {
-        "text": "🌧️ Cambiar Clima Personal (/pweather sun/clear)"
+        "text": "🌧️ Cambiar Clima Personal (/pweather sun/clear)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -92,7 +102,8 @@
     },
     {
       "label": {
-        "text": "🏷️ Cambiar Apodo Ingresado (/nick)"
+        "text": "🏷️ Cambiar Apodo Ingresado (/nick)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -101,7 +112,8 @@
     },
     {
       "label": {
-        "text": "⬅ Volver al Menú Principal"
+        "text": "⬅ Volver al Menú Principal",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:change_page",

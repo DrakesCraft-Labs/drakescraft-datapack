@@ -3,10 +3,12 @@
   "title": {
     "text": "💰 Economía, Pagos y Subastas",
     "bold": true,
-    "color": "gold"
+    "color": "gold",
+    "type": "text"
   },
   "body": [
     {
+      "type": "text",
       "text": "Administra tus monedas, compra, vende y revisa los más ricos:"
     }
   ],
@@ -20,7 +22,8 @@
   "buttons": [
     {
       "label": {
-        "text": "💵 Ver Mi Saldo Actual (/bal)"
+        "text": "💵 Ver Mi Saldo Actual (/bal)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -29,7 +32,8 @@
     },
     {
       "label": {
-        "text": "🏆 Top Jugadores Más Ricos (/baltop)"
+        "text": "🏆 Top Jugadores Más Ricos (/baltop)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -38,7 +42,8 @@
     },
     {
       "label": {
-        "text": "⚖️ Abrir Casa de Subastas (/ah)"
+        "text": "⚖️ Abrir Casa de Subastas (/ah)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -47,7 +52,8 @@
     },
     {
       "label": {
-        "text": "🏷️ Vender Ítem en Mano (/ah sell)"
+        "text": "🏷️ Vender Ítem en Mano (/ah sell)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -56,7 +62,8 @@
     },
     {
       "label": {
-        "text": "🛒 Tienda del Servidor (/tienda)"
+        "text": "🛒 Tienda del Servidor (/tienda)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -65,7 +72,8 @@
     },
     {
       "label": {
-        "text": "💳 Transferir Dinero a Jugador"
+        "text": "💳 Transferir Dinero a Jugador",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:change_page",
@@ -74,7 +82,8 @@
     },
     {
       "label": {
-        "text": "⬅ Volver al Menú Principal"
+        "text": "⬅ Volver al Menú Principal",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:change_page",

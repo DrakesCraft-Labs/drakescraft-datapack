@@ -3,10 +3,12 @@
   "title": {
     "text": "🛡️ Protecciones y Terrenos",
     "bold": true,
-    "color": "blue"
+    "color": "blue",
+    "type": "text"
   },
   "body": [
     {
+      "type": "text",
       "text": "Administra tus bloques de protección y permisos de miembros:"
     }
   ],
@@ -20,7 +22,8 @@
   "buttons": [
     {
       "label": {
-        "text": "📍 Ir a la Protección Actual (/ps home)"
+        "text": "📍 Ir a la Protección Actual (/ps home)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -29,7 +32,8 @@
     },
     {
       "label": {
-        "text": "👁️ Mostrar Límites Visibles (/ps view)"
+        "text": "👁️ Mostrar Límites Visibles (/ps view)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -38,7 +42,8 @@
     },
     {
       "label": {
-        "text": "ℹ️ Información de esta Protección (/ps info)"
+        "text": "ℹ️ Información de esta Protección (/ps info)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -47,7 +52,8 @@
     },
     {
       "label": {
-        "text": "📜 Lista de Mis Protecciones (/ps list)"
+        "text": "📜 Lista de Mis Protecciones (/ps list)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -56,7 +62,8 @@
     },
     {
       "label": {
-        "text": "👤 Añadir Miembro Ingresado (/ps add)"
+        "text": "👤 Añadir Miembro Ingresado (/ps add)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -65,7 +72,8 @@
     },
     {
       "label": {
-        "text": "🚫 Quitar Miembro Ingresado (/ps remove)"
+        "text": "🚫 Quitar Miembro Ingresado (/ps remove)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -74,7 +82,8 @@
     },
     {
       "label": {
-        "text": "🏳️ Configurar Banderas / Flags (/ps flag)"
+        "text": "🏳️ Configurar Banderas / Flags (/ps flag)",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:change_page",
@@ -83,7 +92,8 @@
     },
     {
       "label": {
-        "text": "⬅ Volver al Menú Principal"
+        "text": "⬅ Volver al Menú Principal",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:change_page",

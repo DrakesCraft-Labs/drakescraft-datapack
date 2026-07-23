@@ -3,10 +3,12 @@
   "title": {
     "text": "Transferir Dinero",
     "bold": true,
-    "color": "green"
+    "color": "green",
+    "type": "text"
   },
   "body": [
     {
+      "type": "text",
       "text": "Ingresa el nombre del jugador y el monto a enviar:"
     }
   ],
@@ -25,7 +27,8 @@
   "buttons": [
     {
       "label": {
-        "text": "✔ Enviar Pago"
+        "text": "✔ Enviar Pago",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -34,7 +37,8 @@
     },
     {
       "label": {
-        "text": "⬅ Volver"
+        "text": "⬅ Volver",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:change_page",

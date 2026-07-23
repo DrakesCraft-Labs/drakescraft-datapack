@@ -3,17 +3,20 @@
   "title": {
     "text": "💬 Compartir en Chat (Tags)",
     "bold": true,
-    "color": "light_purple"
+    "color": "light_purple",
+    "type": "text"
   },
   "body": [
     {
+      "type": "text",
       "text": "Presiona un botón para mostrar rápidamente tus estadísticas o ítems a todos en el chat:"
     }
   ],
   "buttons": [
     {
       "label": {
-        "text": "🗡️ Compartir Ítem en Mano ([i])"
+        "text": "🗡️ Compartir Ítem en Mano ([i])",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -22,7 +25,8 @@
     },
     {
       "label": {
-        "text": "🎒 Compartir Todo el Inventario ([inv])"
+        "text": "🎒 Compartir Todo el Inventario ([inv])",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -31,7 +35,8 @@
     },
     {
       "label": {
-        "text": "💼 Compartir Enderchest ([ec])"
+        "text": "💼 Compartir Enderchest ([ec])",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -40,7 +45,8 @@
     },
     {
       "label": {
-        "text": "💰 Compartir mi Dinero ([money])"
+        "text": "💰 Compartir mi Dinero ([money])",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -49,7 +55,8 @@
     },
     {
       "label": {
-        "text": "📶 Compartir mi Ping / Latencia ([ping])"
+        "text": "📶 Compartir mi Ping / Latencia ([ping])",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -58,7 +65,8 @@
     },
     {
       "label": {
-        "text": "📍 Compartir Coordenadas ([coords])"
+        "text": "📍 Compartir Coordenadas ([coords])",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -67,7 +75,8 @@
     },
     {
       "label": {
-        "text": "⬅ Volver a Utilidades"
+        "text": "⬅ Volver a Utilidades",
+        "type": "text"
       },
       "action": {
         "type": "minecraft:change_page",

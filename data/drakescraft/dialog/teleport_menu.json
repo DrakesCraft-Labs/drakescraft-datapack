@@ -3,23 +3,18 @@
   "title": {
     "text": "🏠 Casas y Teletransporte",
     "bold": true,
-    "color": "yellow",
-    "type": "text"
+    "color": "yellow"
   },
-  "body": [
-    {
-      "text": "Gestiona tus casas y peticiones de teletransporte:",
-      "type": "text"
-    }
-  ],
+  "body": {
+    "type": "minecraft:plain",
+    "text": "Gestiona tus casas y peticiones de teletransporte:"
+  },
   "inputs": [
     {
-      "type": "minecraft:text",
       "key": "target_player",
       "label": "Jugador (para TPA):"
     },
     {
-      "type": "minecraft:text",
       "key": "home_name",
       "label": "Nombre de Casa (para /sethome o /home):"
     }
@@ -27,8 +22,7 @@
   "buttons": [
     {
       "label": {
-        "text": "🌐 Ir al Spawn (/spawn)",
-        "type": "text"
+        "text": "🌐 Ir al Spawn (/spawn)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -37,8 +31,7 @@
     },
     {
       "label": {
-        "text": "🎲 Teletransporte Aleatorio (/rtp)",
-        "type": "text"
+        "text": "🎲 Teletransporte Aleatorio (/rtp)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -47,8 +40,7 @@
     },
     {
       "label": {
-        "text": "↩ Volver a Ubicación Anterior (/back)",
-        "type": "text"
+        "text": "↩ Volver a Ubicación Anterior (/back)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -57,8 +49,7 @@
     },
     {
       "label": {
-        "text": "🚀 Ir a Casa Ingresada (/home)",
-        "type": "text"
+        "text": "🚀 Ir a Casa Ingresada (/home)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -67,8 +58,7 @@
     },
     {
       "label": {
-        "text": "➕ Crear Casa Ingresada (/sethome)",
-        "type": "text"
+        "text": "➕ Crear Casa Ingresada (/sethome)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -77,8 +67,7 @@
     },
     {
       "label": {
-        "text": "❌ Borrar Casa Ingresada (/delhome)",
-        "type": "text"
+        "text": "❌ Borrar Casa Ingresada (/delhome)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -87,8 +76,7 @@
     },
     {
       "label": {
-        "text": "📩 Solicitar TPA a Jugador (/tpa)",
-        "type": "text"
+        "text": "📩 Solicitar TPA a Jugador (/tpa)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -97,8 +85,7 @@
     },
     {
       "label": {
-        "text": "✔ Aceptar TPA (/tpaccept)",
-        "type": "text"
+        "text": "✔ Aceptar TPA (/tpaccept)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -107,8 +94,7 @@
     },
     {
       "label": {
-        "text": "✖ Denegar TPA (/tpdeny)",
-        "type": "text"
+        "text": "✖ Denegar TPA (/tpdeny)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -117,8 +103,7 @@
     },
     {
       "label": {
-        "text": "⬅ Volver al Menú Principal",
-        "type": "text"
+        "text": "⬅ Volver al Menú Principal"
       },
       "action": {
         "type": "minecraft:change_page",

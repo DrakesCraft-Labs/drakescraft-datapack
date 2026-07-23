@@ -3,20 +3,16 @@
   "title": {
     "text": "🧪 Slimefun y Guía Técnica",
     "bold": true,
-    "color": "green",
-    "type": "text"
+    "color": "green"
   },
-  "body": [
-    {
-      "text": "Accede a la guía tecnológica, recetas y estadísticas de Slimefun:",
-      "type": "text"
-    }
-  ],
+  "body": {
+    "type": "minecraft:plain",
+    "text": "Accede a la guía tecnológica, recetas y estadísticas de Slimefun:"
+  },
   "buttons": [
     {
       "label": {
-        "text": "📖 Abrir Guía de Slimefun (/sf guide)",
-        "type": "text"
+        "text": "📖 Abrir Guía de Slimefun (/sf guide)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -25,8 +21,7 @@
     },
     {
       "label": {
-        "text": "📊 Estadísticas de Slimefun (/sf stats)",
-        "type": "text"
+        "text": "📊 Estadísticas de Slimefun (/sf stats)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -35,8 +30,7 @@
     },
     {
       "label": {
-        "text": "⬅ Volver al Menú Principal",
-        "type": "text"
+        "text": "⬅ Volver al Menú Principal"
       },
       "action": {
         "type": "minecraft:change_page",

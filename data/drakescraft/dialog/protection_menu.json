@@ -3,18 +3,14 @@
   "title": {
     "text": "🛡️ Protecciones y Terrenos",
     "bold": true,
-    "color": "blue",
-    "type": "text"
+    "color": "blue"
   },
-  "body": [
-    {
-      "text": "Administra tus bloques de protección y permisos de miembros:",
-      "type": "text"
-    }
-  ],
+  "body": {
+    "type": "minecraft:plain",
+    "text": "Administra tus bloques de protección y permisos de miembros:"
+  },
   "inputs": [
     {
-      "type": "minecraft:text",
       "key": "member_name",
       "label": "Jugador (para añadir/remover):"
     }
@@ -22,8 +18,7 @@
   "buttons": [
     {
       "label": {
-        "text": "📍 Ir a la Protección Actual (/ps home)",
-        "type": "text"
+        "text": "📍 Ir a la Protección Actual (/ps home)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -32,8 +27,7 @@
     },
     {
       "label": {
-        "text": "👁️ Mostrar Límites Visibles (/ps view)",
-        "type": "text"
+        "text": "👁️ Mostrar Límites Visibles (/ps view)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -42,8 +36,7 @@
     },
     {
       "label": {
-        "text": "ℹ️ Información de esta Protección (/ps info)",
-        "type": "text"
+        "text": "ℹ️ Información de esta Protección (/ps info)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -52,8 +45,7 @@
     },
     {
       "label": {
-        "text": "📜 Lista de Mis Protecciones (/ps list)",
-        "type": "text"
+        "text": "📜 Lista de Mis Protecciones (/ps list)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -62,8 +54,7 @@
     },
     {
       "label": {
-        "text": "👤 Añadir Miembro Ingresado (/ps add)",
-        "type": "text"
+        "text": "👤 Añadir Miembro Ingresado (/ps add)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -72,8 +63,7 @@
     },
     {
       "label": {
-        "text": "🚫 Quitar Miembro Ingresado (/ps remove)",
-        "type": "text"
+        "text": "🚫 Quitar Miembro Ingresado (/ps remove)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -82,8 +72,7 @@
     },
     {
       "label": {
-        "text": "🏳️ Configurar Banderas / Flags (/ps flag)",
-        "type": "text"
+        "text": "🏳️ Configurar Banderas / Flags (/ps flag)"
       },
       "action": {
         "type": "minecraft:change_page",
@@ -92,8 +81,7 @@
     },
     {
       "label": {
-        "text": "⬅ Volver al Menú Principal",
-        "type": "text"
+        "text": "⬅ Volver al Menú Principal"
       },
       "action": {
         "type": "minecraft:change_page",

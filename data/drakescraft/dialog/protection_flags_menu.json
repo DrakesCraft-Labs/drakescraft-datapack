@@ -3,23 +3,18 @@
   "title": {
     "text": "🏳️ Banderas y Reglas de la Protección",
     "bold": true,
-    "color": "dark_purple",
-    "type": "text"
+    "color": "dark_purple"
   },
-  "body": [
-    {
-      "text": "Configura las banderas principales de tu terreno de protección:",
-      "type": "text"
-    }
-  ],
+  "body": {
+    "type": "minecraft:plain",
+    "text": "Configura las banderas principales de tu terreno de protección:"
+  },
   "inputs": [
     {
-      "type": "minecraft:text",
       "key": "greeting_msg",
       "label": "Mensaje de Bienvenida (/ps flag greeting):"
     },
     {
-      "type": "minecraft:text",
       "key": "farewell_msg",
       "label": "Mensaje de Despedida (/ps flag farewell):"
     }
@@ -27,8 +22,7 @@
   "buttons": [
     {
       "label": {
-        "text": "⚔️ Activar/Desactivar PVP (/ps flag pvp)",
-        "type": "text"
+        "text": "⚔️ Activar/Desactivar PVP (/ps flag pvp)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -37,8 +31,7 @@
     },
     {
       "label": {
-        "text": "🧟 Permitir/Bloquear Mobs Hostiles (/ps flag mob-spawning)",
-        "type": "text"
+        "text": "🧟 Permitir/Bloquear Mobs Hostiles (/ps flag mob-spawning)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -47,8 +40,7 @@
     },
     {
       "label": {
-        "text": "🚪 Permitir/Bloquear Entrada (/ps flag entry)",
-        "type": "text"
+        "text": "🚪 Permitir/Bloquear Entrada (/ps flag entry)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -57,8 +49,7 @@
     },
     {
       "label": {
-        "text": "🧰 Permitir/Bloquear Abrir Cofres (/ps flag chest-access)",
-        "type": "text"
+        "text": "🧰 Permitir/Bloquear Abrir Cofres (/ps flag chest-access)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -67,8 +58,7 @@
     },
     {
       "label": {
-        "text": "🔘 Permitir/Bloquear Botones y Puertas (/ps flag use)",
-        "type": "text"
+        "text": "🔘 Permitir/Bloquear Botones y Puertas (/ps flag use)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -77,8 +67,7 @@
     },
     {
       "label": {
-        "text": "🐶 Proteger Animales / Mascotas (/ps flag damage-animals)",
-        "type": "text"
+        "text": "🐶 Proteger Animales / Mascotas (/ps flag damage-animals)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -87,8 +76,7 @@
     },
     {
       "label": {
-        "text": "🔥 Activar/Desactivar Fuego Esparcido (/ps flag fire-spread)",
-        "type": "text"
+        "text": "🔥 Activar/Desactivar Fuego Esparcido (/ps flag fire-spread)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -97,8 +85,7 @@
     },
     {
       "label": {
-        "text": "💥 Prevenir Explosiones de TNT (/ps flag tnt)",
-        "type": "text"
+        "text": "💥 Prevenir Explosiones de TNT (/ps flag tnt)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -107,8 +94,7 @@
     },
     {
       "label": {
-        "text": "💬 Fijar Mensaje de Bienvenida (/ps flag greeting)",
-        "type": "text"
+        "text": "💬 Fijar Mensaje de Bienvenida (/ps flag greeting)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -117,8 +103,7 @@
     },
     {
       "label": {
-        "text": "💬 Fijar Mensaje de Despedida (/ps flag farewell)",
-        "type": "text"
+        "text": "💬 Fijar Mensaje de Despedida (/ps flag farewell)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -127,8 +112,7 @@
     },
     {
       "label": {
-        "text": "⬅ Volver a Protecciones",
-        "type": "text"
+        "text": "⬅ Volver a Protecciones"
       },
       "action": {
         "type": "minecraft:change_page",

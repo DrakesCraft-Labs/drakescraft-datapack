@@ -80,5 +80,6 @@
         "dialog": "drakescraft:staff_menu"
       }
     }
-  ]
+  ],
+  "type": "minecraft:notice"
 }

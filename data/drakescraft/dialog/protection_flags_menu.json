@@ -119,5 +119,6 @@
         "dialog": "drakescraft:protection_menu"
       }
     }
-  ]
+  ],
+  "type": "minecraft:form"
 }

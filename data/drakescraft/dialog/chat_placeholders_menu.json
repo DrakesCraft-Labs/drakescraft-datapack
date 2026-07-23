@@ -71,5 +71,6 @@
         "dialog": "drakescraft:utilities_menu"
       }
     }
-  ]
+  ],
+  "type": "minecraft:notice"
 }

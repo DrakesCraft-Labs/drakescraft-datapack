@@ -105,5 +105,6 @@
         "dialog": "drakescraft:main_menu"
       }
     }
-  ]
+  ],
+  "type": "minecraft:form"
 }

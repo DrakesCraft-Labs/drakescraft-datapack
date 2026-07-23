@@ -5,14 +5,16 @@
     "bold": true,
     "color": "blue"
   },
-  "body": {
-    "type": "minecraft:plain",
-    "text": "Administra tus bloques de protección y permisos de miembros:"
-  },
+  "body": [
+    {
+      "text": "Administra tus bloques de protección y permisos de miembros:"
+    }
+  ],
   "inputs": [
     {
       "key": "member_name",
-      "label": "Jugador (para añadir/remover):"
+      "label": "Jugador (para añadir/remover):",
+      "type": "minecraft:text"
     }
   ],
   "buttons": [

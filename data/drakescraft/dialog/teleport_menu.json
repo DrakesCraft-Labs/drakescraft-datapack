@@ -5,18 +5,21 @@
     "bold": true,
     "color": "yellow"
   },
-  "body": {
-    "type": "minecraft:plain",
-    "text": "Gestiona tus casas y peticiones de teletransporte:"
-  },
+  "body": [
+    {
+      "text": "Gestiona tus casas y peticiones de teletransporte:"
+    }
+  ],
   "inputs": [
     {
       "key": "target_player",
-      "label": "Jugador (para TPA):"
+      "label": "Jugador (para TPA):",
+      "type": "minecraft:text"
     },
     {
       "key": "home_name",
-      "label": "Nombre de Casa (para /sethome o /home):"
+      "label": "Nombre de Casa (para /sethome o /home):",
+      "type": "minecraft:text"
     }
   ],
   "buttons": [

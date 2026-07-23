@@ -5,10 +5,11 @@
     "bold": true,
     "color": "light_purple"
   },
-  "body": {
-    "type": "minecraft:plain",
-    "text": "Presiona un botón para mostrar rápidamente tus estadísticas o ítems a todos en el chat:"
-  },
+  "body": [
+    {
+      "text": "Presiona un botón para mostrar rápidamente tus estadísticas o ítems a todos en el chat:"
+    }
+  ],
   "buttons": [
     {
       "label": {

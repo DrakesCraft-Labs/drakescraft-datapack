@@ -5,10 +5,11 @@
     "bold": true,
     "color": "green"
   },
-  "body": {
-    "type": "minecraft:plain",
-    "text": "Accede a la guía tecnológica, recetas y estadísticas de Slimefun:"
-  },
+  "body": [
+    {
+      "text": "Accede a la guía tecnológica, recetas y estadísticas de Slimefun:"
+    }
+  ],
   "buttons": [
     {
       "label": {

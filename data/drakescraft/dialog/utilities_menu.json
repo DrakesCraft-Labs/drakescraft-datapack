@@ -5,18 +5,21 @@
     "bold": true,
     "color": "gray"
   },
-  "body": {
-    "type": "minecraft:plain",
-    "text": "Herramientas de utilidad personal e interacción con jugadores:"
-  },
+  "body": [
+    {
+      "text": "Herramientas de utilidad personal e interacción con jugadores:"
+    }
+  ],
   "inputs": [
     {
       "key": "msg_player",
-      "label": "Jugador Destino (para Mensaje Privado):"
+      "label": "Jugador Destino (para Mensaje Privado):",
+      "type": "minecraft:text"
     },
     {
       "key": "msg_text",
-      "label": "Mensaje Privado (/msg):"
+      "label": "Mensaje Privado (/msg):",
+      "type": "minecraft:text"
     }
   ],
   "buttons": [

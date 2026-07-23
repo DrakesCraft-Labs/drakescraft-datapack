@@ -5,10 +5,11 @@
     "bold": true,
     "color": "gold"
   },
-  "body": {
-    "type": "minecraft:plain",
-    "text": "Selecciona una categoría para acceder a todos tus comandos y herramientas:"
-  },
+  "body": [
+    {
+      "text": "Selecciona una categoría para acceder a todos tus comandos y herramientas:"
+    }
+  ],
   "buttons": [
     {
       "label": {

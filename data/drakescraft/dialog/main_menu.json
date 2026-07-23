@@ -64,6 +64,15 @@
     },
     {
       "label": {
+        "text": "⭐ Beneficios de Rango (VIP / OldSchool)"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:rank_menu"
+      }
+    },
+    {
+      "label": {
         "text": "👑 Panel de Staff / Moderación"
       },
       "action": {

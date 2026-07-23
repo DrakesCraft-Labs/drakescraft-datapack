@@ -1,0 +1,109 @@
+{
+  "title": {
+    "text": "⭐ RANGOS ESPECIALES (VIP / OldSchool)",
+    "bold": true,
+    "color": "gold"
+  },
+  "body": {
+    "text": "Tienes un rango especial activo en DrakesCraft. Estos son tus comandos exclusivos. Cuidado con abusar de ellos:"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "new_nickname",
+      "label": "Cambiar Apodo (/nick):"
+    }
+  ],
+  "buttons": [
+    {
+      "label": {
+        "text": "🕊️ Activar / Desactivar Vuelo Personal (/fly)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/fly"
+      }
+    },
+    {
+      "label": {
+        "text": "🎩 Poner Ítem de la Mano como Sombrero (/hat)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/hat"
+      }
+    },
+    {
+      "label": {
+        "text": "🍖 Restaurar Hambre y Comida (/feed)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/feed"
+      }
+    },
+    {
+      "label": {
+        "text": "❤️ Restaurar Salud Completa (/heal)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/heal"
+      }
+    },
+    {
+      "label": {
+        "text": "🔨 Abrir Yunque Portátil (/anvil)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/anvil"
+      }
+    },
+    {
+      "label": {
+        "text": "👁️ Detectar Jugadores Cercanos (/near)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/near"
+      }
+    },
+    {
+      "label": {
+        "text": "☀️ Cambiar Hora Personal (/ptime day/night)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ptime day"
+      }
+    },
+    {
+      "label": {
+        "text": "🌧️ Cambiar Clima Personal (/pweather sun/clear)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/pweather sun"
+      }
+    },
+    {
+      "label": {
+        "text": "🏷️ Cambiar Apodo Ingresado (/nick)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "nick $(new_nickname)"
+      }
+    },
+    {
+      "label": {
+        "text": "⬅ Volver al Menú Principal"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:main_menu"
+      }
+    }
+  ]
+}

@@ -5,7 +5,7 @@
     "color": "dark_purple"
   },
   "body": {
-    "text": "Configura todas las flags de tu terreno (algunas avanzadas requieren rango VIP / OldSchool):"
+    "text": "Configura las banderas principales de tu terreno de protección:"
   },
   "inputs": [
     {
@@ -90,24 +90,6 @@
       "action": {
         "type": "minecraft:run_command",
         "command": "/ps flag tnt"
-      }
-    },
-    {
-      "label": {
-        "text": "⭐ [VIP/OldSchool] Activar Vuelo en Plot (/ps flag fly)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/ps flag fly"
-      }
-    },
-    {
-      "label": {
-        "text": "⭐ [VIP/OldSchool] Curación Automática (/ps flag heal-amount)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/ps flag heal-amount"
       }
     },
     {

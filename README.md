@@ -1,36 +1,54 @@
-# DrakesCraft DataPack (Minecraft 1.21.6+)
+<div align="center">
 
-A 100% server-side Minecraft DataPack for **DrakesCraft SMP** leveraging the native 1.21.6+ **Dialogs** system (`#minecraft:pause_screen_additions`).
+<img src="./assets/datapack-hero.svg" width="100%" alt="DrakesCraft DataPack Banner" />
 
-It embeds an interactive, native GUI directly into the player's Escape (Pause) menu without requiring any client-side mods or custom resource packs!
+# 🐲 DrakesCraft DataPack (Purpur 1.21.11)
+
+**Native Server-Side Pause Menu Dialogs System for DrakesCraft Network**
+
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.11-00F2FE?style=for-the-badge&logo=minecraft&logoColor=white)](https://drakescraft.cl)
+[![Purpur](https://img.shields.io/badge/Server-Purpur_1.21.11-8B5CF6?style=for-the-badge&logo=openjdk&logoColor=white)](https://purpurmc.org)
+[![Type](https://img.shields.io/badge/Type-100%25_Server--Side_DataPack-F5C542?style=for-the-badge)](https://github.com/DrakesCraft-Labs)
+
+</div>
 
 ---
 
-## 🌟 Features
+## 🌟 Overview
 
-* **🏠 Homes & Teleportation:** Quick access to `/spawn`, `/rtp`, `/back`, `/tpaccept`, `/tpdeny`, plus dynamic text inputs for `/home <name>`, `/sethome <name>`, `/delhome <name>`, and `/tpa <player>`.
-* **🛡️ ProtectionStones Management:** Manage your land claims with `/ps home`, `/ps view`, `/ps info`, `/ps list`, `/ps add <player>`, `/ps remove <player>`.
-* **🏳️ Plot Flags:** Toggle flags for `pvp`, `mob-spawning`, `entry`, `chest-access`, `use`, `damage-animals`, `fire-spread`, `tnt`, greeting/farewell messages, and special rank perks like `/ps flag fly` & `/ps flag heal-amount` (VIP / OldSchool).
-* **💰 Economy & Auction:** Quick `/bal`, `/baltop`, `/ah`, `/tienda`, with dynamic inputs for `/ah sell <price>` and `/pay <player> <amount>`.
-* **🎁 Kits & Rewards:** Access `/kit`, `/daily`, `/vote`, and `/claim`.
-* **💬 Chat Placeholders:** One-click sharing for `[i]` (hand item), `[inv]` (inventory), `[ec]` (enderchest), `[money]` (balance), `[ping]` (latency), and `[coords]`.
-* **⚡ Player Utilities:** `/ec`, `/craft`, `/trash`, `/afk`, `/ping`, `/stats`, `/playtime`, and private messages `/msg <player> <message>`.
-* **🧪 Slimefun:** Quick guide (`/sf guide`) and stats (`/sf stats`).
-* **👑 Staff & Moderation Panel:** Dedicated moderation hub (`/v`, `/invsee`, `/ec`, `/tp`, `/gamemode`, `/co i`, `/kick`, `/ban`, `/mute`) protected automatically by **LuckPerms**.
+The **DrakesCraft DataPack** utilizes Minecraft 1.21.11's native **Dialogs** engine and `#minecraft:pause_screen_additions` tag system to inject a custom, interactive GUI directly into the player's Escape (Pause) menu.
+
+**Zero Client Mods Required!** Works natively out of the box for all Java Edition 1.21.11 players joining `mc.drakescraft.cl`.
+
+---
+
+## 📁 Menu Architecture
+
+* 🏠 **Homes & Teleportation (`teleport_menu.json`):** `/spawn`, `/rtp`, `/back`, `/tpaccept`, `/tpdeny`, plus text inputs for `/home <name>`, `/sethome <name>`, `/delhome <name>`, and `/tpa <player>`.
+* 🛡️ **ProtectionStones (`protection_menu.json` & `protection_flags_menu.json`):** `/ps home`, `/ps view`, `/ps info`, `/ps list`, `/ps add <player>`, `/ps remove <player>`, plus plot flags (`pvp`, `mob-spawning`, `entry`, `chest-access`, `use`, `damage-animals`, `fire-spread`, `tnt`, greeting/farewell).
+* 💰 **Economy & Auctions (`economy_menu.json` & `pay_menu.json`):** `/bal`, `/baltop`, `/ah`, `/tienda`, with dynamic inputs for `/ah sell <price>` and `/pay <player> <amount>`.
+* 🎁 **Kits & Rewards (`kits_menu.json`):** `/kit`, `/daily`, `/vote`, `/claim`.
+* 💬 **Chat Placeholders (`chat_placeholders_menu.json`):** One-click sharing for `[i]`, `[inv]`, `[ec]`, `[money]`, `[ping]`, and `[coords]`.
+* ⚡ **Utilities (`utilities_menu.json`):** `/ec`, `/craft`, `/trash`, `/afk`, `/ping`, `/stats`, `/playtime`, `/msg <player> <message>`.
+* 🧪 **Slimefun (`slimefun_menu.json`):** `/sf guide` and `/sf stats`.
+* ⭐ **Special Rank Perks (`rank_menu.json`):** Exclusive commands (`/fly`, `/hat`, `/feed`, `/heal`, `/anvil`, `/near`, `/ptime`, `/pweather`, `/nick <nickname>`) for **VIP / OldSchool** ranks.
+* 👑 **Staff & Moderation (`staff_menu.json`):** Admin tools (`/v`, `/invsee <player>`, `/enderchest <player>`, `/tp <player>`, `/gamemode`, `/co i`, `/kick`, `/ban`, `/mute`) protected by **LuckPerms**.
 
 ---
 
 ## 🚀 Installation
 
-1. Download or clone this repository.
-2. Place the `DrakesCraft_DataPack` folder inside your server's world datapacks directory:
+1. Copy the `DrakesCraft_DataPack` directory into your world's datapacks folder:
    ```text
    <server-root>/world/datapacks/DrakesCraft_DataPack
    ```
-3. Execute `/reload` in-game or restart your Purpur / Paper 1.21.6+ server.
-4. Press **Escape** in-game to see the new **DrakesCraft** pause menu additions button!
+2. Execute `/reload` in-game or restart your Purpur 1.21.11 server.
+3. Open the pause menu in-game to access the **DrakesCraft** hub!
 
 ---
 
-## 📄 License
-MIT License - Created for the **DrakesCraft-Labs** organization.
+<div align="center">
+
+**DrakesCraft Labs** · Chile · Led by [**JackStar6677-1**](https://github.com/JackStar6677-1)
+
+</div>

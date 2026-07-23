@@ -1,0 +1,75 @@
+{
+  "title": {
+    "text": "🐉 DRAKESCRAFT - Menú Principal",
+    "bold": true,
+    "color": "gold"
+  },
+  "body": {
+    "text": "Selecciona una categoría para acceder a todos tus comandos y herramientas:"
+  },
+  "buttons": [
+    {
+      "label": {
+        "text": "🏠 Casas y Teletransporte"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:teleport_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "🛡️ Protecciones y Terrenos (/ps)"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:protection_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "💰 Economía, Pagos y Subastas"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:economy_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "🎁 Kits, Recompensas y Votos"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:kits_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "⚡ Utilidades y Herramientas"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:utilities_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "🧪 Slimefun"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:slimefun_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "👑 Panel de Staff / Moderación"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:staff_menu"
+      }
+    }
+  ]
+}

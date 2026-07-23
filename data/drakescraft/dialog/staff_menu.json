@@ -1,0 +1,132 @@
+{
+  "title": {
+    "text": "👑 Panel de Control de Staff",
+    "bold": true,
+    "color": "red"
+  },
+  "body": {
+    "text": "Herramientas de moderación y administración (Requiere permisos en LuckPerms):"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "target_player",
+      "label": "Jugador Objetivo:"
+    },
+    {
+      "type": "minecraft:text",
+      "key": "reason_time",
+      "label": "Razón / Tiempo:"
+    }
+  ],
+  "buttons": [
+    {
+      "label": {
+        "text": "👻 Activar/Desactivar Vanish (/v)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/v"
+      }
+    },
+    {
+      "label": {
+        "text": "👁️ Ver Inventario de Jugador (/invsee)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "invsee $(target_player)"
+      }
+    },
+    {
+      "label": {
+        "text": "💼 Ver Enderchest de Jugador (/ec)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "enderchest $(target_player)"
+      }
+    },
+    {
+      "label": {
+        "text": "⚡ Teletransportarse a Jugador (/tp)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "tp $(target_player)"
+      }
+    },
+    {
+      "label": {
+        "text": "🎨 Modo Creativo (/gamemode creative)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/gamemode creative"
+      }
+    },
+    {
+      "label": {
+        "text": "⚔️ Modo Supervivencia (/gamemode survival)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/gamemode survival"
+      }
+    },
+    {
+      "label": {
+        "text": "🎥 Modo Espectador (/gamemode spectator)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/gamemode spectator"
+      }
+    },
+    {
+      "label": {
+        "text": "🔍 Inspección CoreProtect (/co i)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/co i"
+      }
+    },
+    {
+      "label": {
+        "text": "👢 Expulsar Jugador (/kick)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "kick $(target_player) $(reason_time)"
+      }
+    },
+    {
+      "label": {
+        "text": "🔨 Banear Jugador (/ban)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "ban $(target_player) $(reason_time)"
+      }
+    },
+    {
+      "label": {
+        "text": "🔇 Silenciar Jugador (/mute)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "mute $(target_player) $(reason_time)"
+      }
+    },
+    {
+      "label": {
+        "text": "⬅ Volver al Menú Principal"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:main_menu"
+      }
+    }
+  ]
+}

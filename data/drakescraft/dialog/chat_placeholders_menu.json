@@ -1,0 +1,75 @@
+{
+  "title": {
+    "text": "💬 Compartir en Chat (Tags)",
+    "bold": true,
+    "color": "light_purple"
+  },
+  "body": {
+    "text": "Presiona un botón para mostrar rápidamente tus estadísticas o ítems a todos en el chat:"
+  },
+  "buttons": [
+    {
+      "label": {
+        "text": "🗡️ Compartir Ítem en Mano ([i])"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/say [i]"
+      }
+    },
+    {
+      "label": {
+        "text": "🎒 Compartir Todo el Inventario ([inv])"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/say [inv]"
+      }
+    },
+    {
+      "label": {
+        "text": "💼 Compartir Enderchest ([ec])"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/say [ec]"
+      }
+    },
+    {
+      "label": {
+        "text": "💰 Compartir mi Dinero ([money])"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/say [money]"
+      }
+    },
+    {
+      "label": {
+        "text": "📶 Compartir mi Ping / Latencia ([ping])"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/say [ping]"
+      }
+    },
+    {
+      "label": {
+        "text": "📍 Compartir Coordenadas ([coords])"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/say [coords]"
+      }
+    },
+    {
+      "label": {
+        "text": "⬅ Volver a Utilidades"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:utilities_menu"
+      }
+    }
+  ]
+}

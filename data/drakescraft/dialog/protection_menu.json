@@ -1,0 +1,91 @@
+{
+  "title": {
+    "text": "🛡️ Protecciones y Terrenos",
+    "bold": true,
+    "color": "blue"
+  },
+  "body": {
+    "text": "Administra tus bloques de protección y permisos de miembros:"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "member_name",
+      "label": "Jugador (para añadir/remover):"
+    }
+  ],
+  "buttons": [
+    {
+      "label": {
+        "text": "📍 Ir a la Protección Actual (/ps home)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps home"
+      }
+    },
+    {
+      "label": {
+        "text": "👁️ Mostrar Límites Visibles (/ps view)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps view"
+      }
+    },
+    {
+      "label": {
+        "text": "ℹ️ Información de esta Protección (/ps info)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps info"
+      }
+    },
+    {
+      "label": {
+        "text": "📜 Lista de Mis Protecciones (/ps list)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps list"
+      }
+    },
+    {
+      "label": {
+        "text": "👤 Añadir Miembro Ingresado (/ps add)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "ps add $(member_name)"
+      }
+    },
+    {
+      "label": {
+        "text": "🚫 Quitar Miembro Ingresado (/ps remove)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "ps remove $(member_name)"
+      }
+    },
+    {
+      "label": {
+        "text": "🏳️ Configurar Banderas / Flags (/ps flag)"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:protection_flags_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "⬅ Volver al Menú Principal"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:main_menu"
+      }
+    }
+  ]
+}

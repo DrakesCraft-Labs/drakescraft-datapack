@@ -1,0 +1,82 @@
+{
+  "title": {
+    "text": "💰 Economía, Pagos y Subastas",
+    "bold": true,
+    "color": "gold"
+  },
+  "body": {
+    "text": "Administra tus monedas, compra, vende y revisa los más ricos:"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "price",
+      "label": "Precio para Subastar Ítem en Mano (/ah sell):"
+    }
+  ],
+  "buttons": [
+    {
+      "label": {
+        "text": "💵 Ver Mi Saldo Actual (/bal)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/bal"
+      }
+    },
+    {
+      "label": {
+        "text": "🏆 Top Jugadores Más Ricos (/baltop)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/baltop"
+      }
+    },
+    {
+      "label": {
+        "text": "⚖️ Abrir Casa de Subastas (/ah)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ah"
+      }
+    },
+    {
+      "label": {
+        "text": "🏷️ Vender Ítem en Mano (/ah sell)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "ah sell $(price)"
+      }
+    },
+    {
+      "label": {
+        "text": "🛒 Tienda del Servidor (/tienda)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/tienda"
+      }
+    },
+    {
+      "label": {
+        "text": "💳 Transferir Dinero a Jugador"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:pay_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "⬅ Volver al Menú Principal"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:main_menu"
+      }
+    }
+  ]
+}

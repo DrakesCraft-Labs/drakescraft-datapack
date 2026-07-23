@@ -1,0 +1,57 @@
+{
+  "title": {
+    "text": "🎁 Kits y Recompensas",
+    "bold": true,
+    "color": "aqua"
+  },
+  "body": {
+    "text": "Reclama tus regalos diarios, kits de inicio y recompensas de voto:"
+  },
+  "buttons": [
+    {
+      "label": {
+        "text": "📦 Menú de Kits (/kit)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/kit"
+      }
+    },
+    {
+      "label": {
+        "text": "📅 Recompensa Diaria (/daily)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/daily"
+      }
+    },
+    {
+      "label": {
+        "text": "🗳️ Enlaces para Votar (/vote)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/vote"
+      }
+    },
+    {
+      "label": {
+        "text": "🔑 Reclamar Llaves de Voto (/claim)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/claim"
+      }
+    },
+    {
+      "label": {
+        "text": "⬅ Volver al Menú Principal"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:main_menu"
+      }
+    }
+  ]
+}

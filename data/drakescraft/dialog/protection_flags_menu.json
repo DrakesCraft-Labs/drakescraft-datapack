@@ -1,0 +1,141 @@
+{
+  "title": {
+    "text": "🏳️ Banderas y Reglas de la Protección",
+    "bold": true,
+    "color": "dark_purple"
+  },
+  "body": {
+    "text": "Configura todas las flags de tu terreno (algunas avanzadas requieren rango VIP / OldSchool):"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "greeting_msg",
+      "label": "Mensaje de Bienvenida (/ps flag greeting):"
+    },
+    {
+      "type": "minecraft:text",
+      "key": "farewell_msg",
+      "label": "Mensaje de Despedida (/ps flag farewell):"
+    }
+  ],
+  "buttons": [
+    {
+      "label": {
+        "text": "⚔️ Activar/Desactivar PVP (/ps flag pvp)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps flag pvp"
+      }
+    },
+    {
+      "label": {
+        "text": "🧟 Permitir/Bloquear Mobs Hostiles (/ps flag mob-spawning)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps flag mob-spawning"
+      }
+    },
+    {
+      "label": {
+        "text": "🚪 Permitir/Bloquear Entrada (/ps flag entry)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps flag entry"
+      }
+    },
+    {
+      "label": {
+        "text": "🧰 Permitir/Bloquear Abrir Cofres (/ps flag chest-access)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps flag chest-access"
+      }
+    },
+    {
+      "label": {
+        "text": "🔘 Permitir/Bloquear Botones y Puertas (/ps flag use)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps flag use"
+      }
+    },
+    {
+      "label": {
+        "text": "🐶 Proteger Animales / Mascotas (/ps flag damage-animals)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps flag damage-animals"
+      }
+    },
+    {
+      "label": {
+        "text": "🔥 Activar/Desactivar Fuego Esparcido (/ps flag fire-spread)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps flag fire-spread"
+      }
+    },
+    {
+      "label": {
+        "text": "💥 Prevenir Explosiones de TNT (/ps flag tnt)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps flag tnt"
+      }
+    },
+    {
+      "label": {
+        "text": "⭐ [VIP/OldSchool] Activar Vuelo en Plot (/ps flag fly)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps flag fly"
+      }
+    },
+    {
+      "label": {
+        "text": "⭐ [VIP/OldSchool] Curación Automática (/ps flag heal-amount)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps flag heal-amount"
+      }
+    },
+    {
+      "label": {
+        "text": "💬 Fijar Mensaje de Bienvenida (/ps flag greeting)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "ps flag greeting $(greeting_msg)"
+      }
+    },
+    {
+      "label": {
+        "text": "💬 Fijar Mensaje de Despedida (/ps flag farewell)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "ps flag farewell $(farewell_msg)"
+      }
+    },
+    {
+      "label": {
+        "text": "⬅ Volver a Protecciones"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:protection_menu"
+      }
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "title": {
+    "text": "🏠 Casas y Teletransporte",
+    "bold": true,
+    "color": "yellow"
+  },
+  "body": {
+    "text": "Gestiona tus casas y peticiones de teletransporte:"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "target_player",
+      "label": "Jugador (para TPA):"
+    },
+    {
+      "type": "minecraft:text",
+      "key": "home_name",
+      "label": "Nombre de Casa (para /sethome o /home):"
+    }
+  ],
+  "buttons": [
+    {
+      "label": {
+        "text": "🌐 Ir al Spawn (/spawn)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/spawn"
+      }
+    },
+    {
+      "label": {
+        "text": "🎲 Teletransporte Aleatorio (/rtp)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/rtp"
+      }
+    },
+    {
+      "label": {
+        "text": "↩ Volver a Ubicación Anterior (/back)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/back"
+      }
+    },
+    {
+      "label": {
+        "text": "🚀 Ir a Casa Ingresada (/home)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "home $(home_name)"
+      }
+    },
+    {
+      "label": {
+        "text": "➕ Crear Casa Ingresada (/sethome)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "sethome $(home_name)"
+      }
+    },
+    {
+      "label": {
+        "text": "❌ Borrar Casa Ingresada (/delhome)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "delhome $(home_name)"
+      }
+    },
+    {
+      "label": {
+        "text": "📩 Solicitar TPA a Jugador (/tpa)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "tpa $(target_player)"
+      }
+    },
+    {
+      "label": {
+        "text": "✔ Aceptar TPA (/tpaccept)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/tpaccept"
+      }
+    },
+    {
+      "label": {
+        "text": "✖ Denegar TPA (/tpdeny)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/tpdeny"
+      }
+    },
+    {
+      "label": {
+        "text": "⬅ Volver al Menú Principal"
+      },
+      "action": {
+        "type": "minecraft:change_page",
+        "dialog": "drakescraft:main_menu"
+      }
+    }
+  ]
+}

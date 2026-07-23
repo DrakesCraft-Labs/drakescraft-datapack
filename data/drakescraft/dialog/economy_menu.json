@@ -5,9 +5,12 @@
     "bold": true,
     "color": "gold"
   },
-  "body": [
-    "Administra tus monedas, compra, vende y revisa los más ricos:"
-  ],
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Administra tus monedas, compra, vende y revisa los más ricos:"
+    }
+  },
   "inputs": [
     {
       "type": "minecraft:text",

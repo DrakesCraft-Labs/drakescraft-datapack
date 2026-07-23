@@ -5,9 +5,12 @@
     "bold": true,
     "color": "yellow"
   },
-  "body": [
-    "Gestiona tus casas y peticiones de teletransporte:"
-  ],
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Gestiona tus casas y peticiones de teletransporte:"
+    }
+  },
   "inputs": [
     {
       "type": "minecraft:text",

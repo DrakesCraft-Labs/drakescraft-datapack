@@ -5,9 +5,12 @@
     "bold": true,
     "color": "red"
   },
-  "body": [
-    "Herramientas de moderación y administración (Requiere permisos en LuckPerms):"
-  ],
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Herramientas de moderación y administración (Requiere permisos en LuckPerms):"
+    }
+  },
   "inputs": [
     {
       "type": "minecraft:text",

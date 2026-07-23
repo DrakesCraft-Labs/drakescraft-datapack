@@ -5,9 +5,12 @@
     "bold": true,
     "color": "gray"
   },
-  "body": [
-    "Herramientas de utilidad personal e interacción con jugadores:"
-  ],
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Herramientas de utilidad personal e interacción con jugadores:"
+    }
+  },
   "inputs": [
     {
       "type": "minecraft:text",

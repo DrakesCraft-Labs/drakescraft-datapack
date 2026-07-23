@@ -5,9 +5,12 @@
     "bold": true,
     "color": "aqua"
   },
-  "body": [
-    "Reclama tus regalos diarios, kits de inicio y recompensas de voto:"
-  ],
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Reclama tus regalos diarios, kits de inicio y recompensas de voto:"
+    }
+  },
   "buttons": [
     {
       "label": {

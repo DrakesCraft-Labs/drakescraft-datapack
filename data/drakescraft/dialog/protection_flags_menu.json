@@ -5,9 +5,12 @@
     "bold": true,
     "color": "dark_purple"
   },
-  "body": [
-    "Configura las banderas principales de tu terreno de protección:"
-  ],
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Configura las banderas principales de tu terreno de protección:"
+    }
+  },
   "inputs": [
     {
       "type": "minecraft:text",

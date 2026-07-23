@@ -5,9 +5,12 @@
     "bold": true,
     "color": "gold"
   },
-  "body": [
-    "Selecciona una categoría para acceder a todos tus comandos y herramientas:"
-  ],
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Selecciona una categoría para acceder a todos tus comandos y herramientas:"
+    }
+  },
   "buttons": [
     {
       "label": {

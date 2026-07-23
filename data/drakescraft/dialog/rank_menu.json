@@ -5,9 +5,12 @@
     "bold": true,
     "color": "gold"
   },
-  "body": [
-    "Tienes un rango especial activo en DrakesCraft. Estos son tus comandos exclusivos. Cuidado con abusar de ellos:"
-  ],
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Tienes un rango especial activo en DrakesCraft. Estos son tus comandos exclusivos. Cuidado con abusar de ellos:"
+    }
+  },
   "inputs": [
     {
       "type": "minecraft:text",

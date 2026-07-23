@@ -5,9 +5,12 @@
     "bold": true,
     "color": "blue"
   },
-  "body": [
-    "Administra tus bloques de protección y permisos de miembros:"
-  ],
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Administra tus bloques de protección y permisos de miembros:"
+    }
+  },
   "inputs": [
     {
       "type": "minecraft:text",

@@ -5,9 +5,12 @@
     "bold": true,
     "color": "green"
   },
-  "body": [
-    "Ingresa el nombre del jugador y el monto a enviar:"
-  ],
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Ingresa el nombre del jugador y el monto a enviar:"
+    }
+  },
   "inputs": [
     {
       "type": "minecraft:text",

@@ -1,12 +1,15 @@
 {
+  "type": "minecraft:notice",
   "title": {
     "text": "🎁 Kits y Recompensas",
     "bold": true,
     "color": "aqua"
   },
-  "body": {
-    "text": "Reclama tus regalos diarios, kits de inicio y recompensas de voto:"
-  },
+  "body": [
+    {
+      "text": "Reclama tus regalos diarios, kits de inicio y recompensas de voto:"
+    }
+  ],
   "buttons": [
     {
       "label": {
@@ -53,6 +56,5 @@
         "dialog": "drakescraft:main_menu"
       }
     }
-  ],
-  "type": "minecraft:notice"
+  ]
 }

@@ -1,12 +1,15 @@
 {
+  "type": "minecraft:notice",
   "title": {
     "text": "💰 Economía, Pagos y Subastas",
     "bold": true,
     "color": "gold"
   },
-  "body": {
-    "text": "Administra tus monedas, compra, vende y revisa los más ricos:"
-  },
+  "body": [
+    {
+      "text": "Administra tus monedas, compra, vende y revisa los más ricos:"
+    }
+  ],
   "inputs": [
     {
       "type": "minecraft:text",
@@ -78,6 +81,5 @@
         "dialog": "drakescraft:main_menu"
       }
     }
-  ],
-  "type": "minecraft:form"
+  ]
 }

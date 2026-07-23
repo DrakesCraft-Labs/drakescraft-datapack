@@ -1,12 +1,15 @@
 {
+  "type": "minecraft:notice",
   "title": {
     "text": "🛡️ Protecciones y Terrenos",
     "bold": true,
     "color": "blue"
   },
-  "body": {
-    "text": "Administra tus bloques de protección y permisos de miembros:"
-  },
+  "body": [
+    {
+      "text": "Administra tus bloques de protección y permisos de miembros:"
+    }
+  ],
   "inputs": [
     {
       "type": "minecraft:text",
@@ -87,6 +90,5 @@
         "dialog": "drakescraft:main_menu"
       }
     }
-  ],
-  "type": "minecraft:form"
+  ]
 }

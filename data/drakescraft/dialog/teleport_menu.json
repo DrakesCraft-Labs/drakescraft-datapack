@@ -1,12 +1,15 @@
 {
+  "type": "minecraft:notice",
   "title": {
     "text": "🏠 Casas y Teletransporte",
     "bold": true,
     "color": "yellow"
   },
-  "body": {
-    "text": "Gestiona tus casas y peticiones de teletransporte:"
-  },
+  "body": [
+    {
+      "text": "Gestiona tus casas y peticiones de teletransporte:"
+    }
+  ],
   "inputs": [
     {
       "type": "minecraft:text",
@@ -110,6 +113,5 @@
         "dialog": "drakescraft:main_menu"
       }
     }
-  ],
-  "type": "minecraft:form"
+  ]
 }

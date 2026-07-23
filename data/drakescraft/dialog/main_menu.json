@@ -1,12 +1,15 @@
 {
+  "type": "minecraft:notice",
   "title": {
     "text": "🐉 DRAKESCRAFT - Menú Principal",
     "bold": true,
     "color": "gold"
   },
-  "body": {
-    "text": "Selecciona una categoría para acceder a todos tus comandos y herramientas:"
-  },
+  "body": [
+    {
+      "text": "Selecciona una categoría para acceder a todos tus comandos y herramientas:"
+    }
+  ],
   "buttons": [
     {
       "label": {
@@ -80,6 +83,5 @@
         "dialog": "drakescraft:staff_menu"
       }
     }
-  ],
-  "type": "minecraft:notice"
+  ]
 }

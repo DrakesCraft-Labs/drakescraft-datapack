@@ -1,12 +1,15 @@
 {
+  "type": "minecraft:notice",
   "title": {
     "text": "Transferir Dinero",
     "bold": true,
     "color": "green"
   },
-  "body": {
-    "text": "Ingresa el nombre del jugador y el monto a enviar:"
-  },
+  "body": [
+    {
+      "text": "Ingresa el nombre del jugador y el monto a enviar:"
+    }
+  ],
   "inputs": [
     {
       "type": "minecraft:text",
@@ -38,6 +41,5 @@
         "dialog": "drakescraft:main_menu"
       }
     }
-  ],
-  "type": "minecraft:form"
+  ]
 }

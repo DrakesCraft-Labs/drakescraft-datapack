@@ -1,12 +1,15 @@
 {
+  "type": "minecraft:notice",
   "title": {
     "text": "👑 Panel de Control de Staff",
     "bold": true,
     "color": "red"
   },
-  "body": {
-    "text": "Herramientas de moderación y administración (Requiere permisos en LuckPerms):"
-  },
+  "body": [
+    {
+      "text": "Herramientas de moderación y administración (Requiere permisos en LuckPerms):"
+    }
+  ],
   "inputs": [
     {
       "type": "minecraft:text",
@@ -128,6 +131,5 @@
         "dialog": "drakescraft:main_menu"
       }
     }
-  ],
-  "type": "minecraft:form"
+  ]
 }

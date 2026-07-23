@@ -1,12 +1,15 @@
 {
+  "type": "minecraft:notice",
   "title": {
     "text": "💬 Compartir en Chat (Tags)",
     "bold": true,
     "color": "light_purple"
   },
-  "body": {
-    "text": "Presiona un botón para mostrar rápidamente tus estadísticas o ítems a todos en el chat:"
-  },
+  "body": [
+    {
+      "text": "Presiona un botón para mostrar rápidamente tus estadísticas o ítems a todos en el chat:"
+    }
+  ],
   "buttons": [
     {
       "label": {
@@ -71,6 +74,5 @@
         "dialog": "drakescraft:utilities_menu"
       }
     }
-  ],
-  "type": "minecraft:notice"
+  ]
 }

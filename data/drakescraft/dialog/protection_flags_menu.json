@@ -1,12 +1,15 @@
 {
+  "type": "minecraft:notice",
   "title": {
     "text": "🏳️ Banderas y Reglas de la Protección",
     "bold": true,
     "color": "dark_purple"
   },
-  "body": {
-    "text": "Configura las banderas principales de tu terreno de protección:"
-  },
+  "body": [
+    {
+      "text": "Configura las banderas principales de tu terreno de protección:"
+    }
+  ],
   "inputs": [
     {
       "type": "minecraft:text",
@@ -119,6 +122,5 @@
         "dialog": "drakescraft:protection_menu"
       }
     }
-  ],
-  "type": "minecraft:form"
+  ]
 }

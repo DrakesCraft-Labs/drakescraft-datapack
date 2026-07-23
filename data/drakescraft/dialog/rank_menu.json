@@ -1,12 +1,15 @@
 {
+  "type": "minecraft:notice",
   "title": {
     "text": "⭐ RANGOS ESPECIALES (VIP / OldSchool)",
     "bold": true,
     "color": "gold"
   },
-  "body": {
-    "text": "Tienes un rango especial activo en DrakesCraft. Estos son tus comandos exclusivos. Cuidado con abusar de ellos:"
-  },
+  "body": [
+    {
+      "text": "Tienes un rango especial activo en DrakesCraft. Estos son tus comandos exclusivos. Cuidado con abusar de ellos:"
+    }
+  ],
   "inputs": [
     {
       "type": "minecraft:text",
@@ -105,6 +108,5 @@
         "dialog": "drakescraft:main_menu"
       }
     }
-  ],
-  "type": "minecraft:form"
+  ]
 }

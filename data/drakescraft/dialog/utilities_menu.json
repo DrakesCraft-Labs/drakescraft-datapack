@@ -1,12 +1,15 @@
 {
+  "type": "minecraft:notice",
   "title": {
     "text": "⚡ Utilidades y Herramientas",
     "bold": true,
     "color": "gray"
   },
-  "body": {
-    "text": "Herramientas de utilidad personal e interacción con jugadores:"
-  },
+  "body": [
+    {
+      "text": "Herramientas de utilidad personal e interacción con jugadores:"
+    }
+  ],
   "inputs": [
     {
       "type": "minecraft:text",
@@ -110,6 +113,5 @@
         "dialog": "drakescraft:main_menu"
       }
     }
-  ],
-  "type": "minecraft:form"
+  ]
 }

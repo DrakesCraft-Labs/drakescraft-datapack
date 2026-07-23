@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:notice",
+  "type": "minecraft:multi_action",
   "title": {
     "text": "🧪 Slimefun y Guía Técnica",
     "bold": true,
@@ -11,7 +11,7 @@
       "text": "Accede a la guía tecnológica, recetas y estadísticas de Slimefun:"
     }
   },
-  "buttons": [
+  "actions": [
     {
       "label": {
         "text": "📖 Abrir Guía de Slimefun (/sf guide)"

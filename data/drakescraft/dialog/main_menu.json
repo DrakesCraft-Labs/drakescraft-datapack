@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:notice",
+  "type": "minecraft:multi_action",
   "title": {
     "text": "🐉 DRAKESCRAFT - Menú Principal",
     "bold": true,
@@ -11,7 +11,7 @@
       "text": "Selecciona una categoría para acceder a todos tus comandos y herramientas:"
     }
   },
-  "buttons": [
+  "actions": [
     {
       "label": {
         "text": "🏠 Casas y Teletransporte"

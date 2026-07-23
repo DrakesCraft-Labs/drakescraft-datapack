@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:notice",
+  "type": "minecraft:multi_action",
   "title": {
     "text": "💬 Compartir en Chat (Tags)",
     "bold": true,
@@ -11,7 +11,7 @@
       "text": "Presiona un botón para mostrar rápidamente tus estadísticas o ítems a todos en el chat:"
     }
   },
-  "buttons": [
+  "actions": [
     {
       "label": {
         "text": "🗡️ Compartir Ítem en Mano ([i])"

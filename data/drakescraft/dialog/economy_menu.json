@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:notice",
+  "type": "minecraft:multi_action",
   "title": {
     "text": "💰 Economía, Pagos y Subastas",
     "bold": true,
@@ -20,7 +20,7 @@
       }
     }
   ],
-  "buttons": [
+  "actions": [
     {
       "label": {
         "text": "💵 Ver Mi Saldo Actual (/bal)"

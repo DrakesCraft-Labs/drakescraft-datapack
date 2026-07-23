@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:notice",
+  "type": "minecraft:multi_action",
   "title": {
     "text": "🏳️ Banderas y Reglas de la Protección",
     "bold": true,
@@ -27,7 +27,7 @@
       }
     }
   ],
-  "buttons": [
+  "actions": [
     {
       "label": {
         "text": "⚔️ Activar/Desactivar PVP (/ps flag pvp)"

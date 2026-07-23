@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:notice",
+  "type": "minecraft:multi_action",
   "title": {
     "text": "⚡ Utilidades y Herramientas",
     "bold": true,
@@ -27,7 +27,7 @@
       }
     }
   ],
-  "buttons": [
+  "actions": [
     {
       "label": {
         "text": "💬 Compartir Ítems y Stats en Chat ([i], [inv], [ping])"

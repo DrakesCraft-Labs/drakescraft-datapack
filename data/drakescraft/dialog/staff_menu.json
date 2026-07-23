@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:notice",
+  "type": "minecraft:multi_action",
   "title": {
     "text": "👑 Panel de Control de Staff",
     "bold": true,
@@ -27,7 +27,7 @@
       }
     }
   ],
-  "buttons": [
+  "actions": [
     {
       "label": {
         "text": "👻 Activar/Desactivar Vanish (/v)"

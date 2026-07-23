@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:notice",
+  "type": "minecraft:multi_action",
   "title": {
     "text": "🎁 Kits y Recompensas",
     "bold": true,
@@ -11,7 +11,7 @@
       "text": "Reclama tus regalos diarios, kits de inicio y recompensas de voto:"
     }
   },
-  "buttons": [
+  "actions": [
     {
       "label": {
         "text": "📦 Menú de Kits (/kit)"

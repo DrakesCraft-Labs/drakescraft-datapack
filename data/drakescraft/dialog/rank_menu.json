@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:notice",
+  "type": "minecraft:multi_action",
   "title": {
     "text": "⭐ RANGOS ESPECIALES (VIP / OldSchool)",
     "bold": true,
@@ -20,7 +20,7 @@
       }
     }
   ],
-  "buttons": [
+  "actions": [
     {
       "label": {
         "text": "🕊️ Activar / Desactivar Vuelo Personal (/fly)"

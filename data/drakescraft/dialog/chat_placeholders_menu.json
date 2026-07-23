@@ -3,20 +3,13 @@
   "title": {
     "text": "💬 Compartir en Chat (Tags)",
     "bold": true,
-    "color": "light_purple",
-    "type": "text"
+    "color": "light_purple"
   },
-  "body": [
-    {
-      "type": "text",
-      "text": "Presiona un botón para mostrar rápidamente tus estadísticas o ítems a todos en el chat:"
-    }
-  ],
+  "body": "Presiona un botón para mostrar rápidamente tus estadísticas o ítems a todos en el chat:",
   "buttons": [
     {
       "label": {
-        "text": "🗡️ Compartir Ítem en Mano ([i])",
-        "type": "text"
+        "text": "🗡️ Compartir Ítem en Mano ([i])"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -25,8 +18,7 @@
     },
     {
       "label": {
-        "text": "🎒 Compartir Todo el Inventario ([inv])",
-        "type": "text"
+        "text": "🎒 Compartir Todo el Inventario ([inv])"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -35,8 +27,7 @@
     },
     {
       "label": {
-        "text": "💼 Compartir Enderchest ([ec])",
-        "type": "text"
+        "text": "💼 Compartir Enderchest ([ec])"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -45,8 +36,7 @@
     },
     {
       "label": {
-        "text": "💰 Compartir mi Dinero ([money])",
-        "type": "text"
+        "text": "💰 Compartir mi Dinero ([money])"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -55,8 +45,7 @@
     },
     {
       "label": {
-        "text": "📶 Compartir mi Ping / Latencia ([ping])",
-        "type": "text"
+        "text": "📶 Compartir mi Ping / Latencia ([ping])"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -65,8 +54,7 @@
     },
     {
       "label": {
-        "text": "📍 Compartir Coordenadas ([coords])",
-        "type": "text"
+        "text": "📍 Compartir Coordenadas ([coords])"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -75,8 +63,7 @@
     },
     {
       "label": {
-        "text": "⬅ Volver a Utilidades",
-        "type": "text"
+        "text": "⬅ Volver a Utilidades"
       },
       "action": {
         "type": "minecraft:change_page",

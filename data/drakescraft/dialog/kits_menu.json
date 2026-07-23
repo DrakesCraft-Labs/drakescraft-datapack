@@ -3,20 +3,13 @@
   "title": {
     "text": "🎁 Kits y Recompensas",
     "bold": true,
-    "color": "aqua",
-    "type": "text"
+    "color": "aqua"
   },
-  "body": [
-    {
-      "type": "text",
-      "text": "Reclama tus regalos diarios, kits de inicio y recompensas de voto:"
-    }
-  ],
+  "body": "Reclama tus regalos diarios, kits de inicio y recompensas de voto:",
   "buttons": [
     {
       "label": {
-        "text": "📦 Menú de Kits (/kit)",
-        "type": "text"
+        "text": "📦 Menú de Kits (/kit)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -25,8 +18,7 @@
     },
     {
       "label": {
-        "text": "📅 Recompensa Diaria (/daily)",
-        "type": "text"
+        "text": "📅 Recompensa Diaria (/daily)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -35,8 +27,7 @@
     },
     {
       "label": {
-        "text": "🗳️ Enlaces para Votar (/vote)",
-        "type": "text"
+        "text": "🗳️ Enlaces para Votar (/vote)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -45,8 +36,7 @@
     },
     {
       "label": {
-        "text": "🔑 Reclamar Llaves de Voto (/claim)",
-        "type": "text"
+        "text": "🔑 Reclamar Llaves de Voto (/claim)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -55,8 +45,7 @@
     },
     {
       "label": {
-        "text": "⬅ Volver al Menú Principal",
-        "type": "text"
+        "text": "⬅ Volver al Menú Principal"
       },
       "action": {
         "type": "minecraft:change_page",

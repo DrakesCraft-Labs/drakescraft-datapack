@@ -3,20 +3,13 @@
   "title": {
     "text": "🐉 DRAKESCRAFT - Menú Principal",
     "bold": true,
-    "color": "gold",
-    "type": "text"
+    "color": "gold"
   },
-  "body": [
-    {
-      "type": "text",
-      "text": "Selecciona una categoría para acceder a todos tus comandos y herramientas:"
-    }
-  ],
+  "body": "Selecciona una categoría para acceder a todos tus comandos y herramientas:",
   "buttons": [
     {
       "label": {
-        "text": "🏠 Casas y Teletransporte",
-        "type": "text"
+        "text": "🏠 Casas y Teletransporte"
       },
       "action": {
         "type": "minecraft:change_page",
@@ -25,8 +18,7 @@
     },
     {
       "label": {
-        "text": "🛡️ Protecciones y Terrenos (/ps)",
-        "type": "text"
+        "text": "🛡️ Protecciones y Terrenos (/ps)"
       },
       "action": {
         "type": "minecraft:change_page",
@@ -35,8 +27,7 @@
     },
     {
       "label": {
-        "text": "💰 Economía, Pagos y Subastas",
-        "type": "text"
+        "text": "💰 Economía, Pagos y Subastas"
       },
       "action": {
         "type": "minecraft:change_page",
@@ -45,8 +36,7 @@
     },
     {
       "label": {
-        "text": "🎁 Kits, Recompensas y Votos",
-        "type": "text"
+        "text": "🎁 Kits, Recompensas y Votos"
       },
       "action": {
         "type": "minecraft:change_page",
@@ -55,8 +45,7 @@
     },
     {
       "label": {
-        "text": "⚡ Utilidades y Herramientas",
-        "type": "text"
+        "text": "⚡ Utilidades y Herramientas"
       },
       "action": {
         "type": "minecraft:change_page",
@@ -65,8 +54,7 @@
     },
     {
       "label": {
-        "text": "🧪 Slimefun",
-        "type": "text"
+        "text": "🧪 Slimefun"
       },
       "action": {
         "type": "minecraft:change_page",
@@ -75,8 +63,7 @@
     },
     {
       "label": {
-        "text": "⭐ Beneficios de Rango (VIP / OldSchool)",
-        "type": "text"
+        "text": "⭐ Beneficios de Rango (VIP / OldSchool)"
       },
       "action": {
         "type": "minecraft:change_page",
@@ -85,8 +72,7 @@
     },
     {
       "label": {
-        "text": "👑 Panel de Staff / Moderación",
-        "type": "text"
+        "text": "👑 Panel de Staff / Moderación"
       },
       "action": {
         "type": "minecraft:change_page",

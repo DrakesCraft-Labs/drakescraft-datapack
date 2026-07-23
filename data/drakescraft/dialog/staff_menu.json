@@ -3,32 +3,25 @@
   "title": {
     "text": "👑 Panel de Control de Staff",
     "bold": true,
-    "color": "red",
-    "type": "text"
+    "color": "red"
   },
-  "body": [
-    {
-      "type": "text",
-      "text": "Herramientas de moderación y administración (Requiere permisos en LuckPerms):"
-    }
-  ],
+  "body": "Herramientas de moderación y administración (Requiere permisos en LuckPerms):",
   "inputs": [
     {
+      "type": "minecraft:text",
       "key": "target_player",
-      "label": "Jugador Objetivo:",
-      "type": "minecraft:text"
+      "label": "Jugador Objetivo:"
     },
     {
+      "type": "minecraft:text",
       "key": "reason_time",
-      "label": "Razón / Tiempo:",
-      "type": "minecraft:text"
+      "label": "Razón / Tiempo:"
     }
   ],
   "buttons": [
     {
       "label": {
-        "text": "👻 Activar/Desactivar Vanish (/v)",
-        "type": "text"
+        "text": "👻 Activar/Desactivar Vanish (/v)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -37,8 +30,7 @@
     },
     {
       "label": {
-        "text": "👁️ Ver Inventario de Jugador (/invsee)",
-        "type": "text"
+        "text": "👁️ Ver Inventario de Jugador (/invsee)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -47,8 +39,7 @@
     },
     {
       "label": {
-        "text": "💼 Ver Enderchest de Jugador (/ec)",
-        "type": "text"
+        "text": "💼 Ver Enderchest de Jugador (/ec)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -57,8 +48,7 @@
     },
     {
       "label": {
-        "text": "⚡ Teletransportarse a Jugador (/tp)",
-        "type": "text"
+        "text": "⚡ Teletransportarse a Jugador (/tp)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -67,8 +57,7 @@
     },
     {
       "label": {
-        "text": "🎨 Modo Creativo (/gamemode creative)",
-        "type": "text"
+        "text": "🎨 Modo Creativo (/gamemode creative)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -77,8 +66,7 @@
     },
     {
       "label": {
-        "text": "⚔️ Modo Supervivencia (/gamemode survival)",
-        "type": "text"
+        "text": "⚔️ Modo Supervivencia (/gamemode survival)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -87,8 +75,7 @@
     },
     {
       "label": {
-        "text": "🎥 Modo Espectador (/gamemode spectator)",
-        "type": "text"
+        "text": "🎥 Modo Espectador (/gamemode spectator)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -97,8 +84,7 @@
     },
     {
       "label": {
-        "text": "🔍 Inspección CoreProtect (/co i)",
-        "type": "text"
+        "text": "🔍 Inspección CoreProtect (/co i)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -107,8 +93,7 @@
     },
     {
       "label": {
-        "text": "👢 Expulsar Jugador (/kick)",
-        "type": "text"
+        "text": "👢 Expulsar Jugador (/kick)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -117,8 +102,7 @@
     },
     {
       "label": {
-        "text": "🔨 Banear Jugador (/ban)",
-        "type": "text"
+        "text": "🔨 Banear Jugador (/ban)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -127,8 +111,7 @@
     },
     {
       "label": {
-        "text": "🔇 Silenciar Jugador (/mute)",
-        "type": "text"
+        "text": "🔇 Silenciar Jugador (/mute)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -137,8 +120,7 @@
     },
     {
       "label": {
-        "text": "⬅ Volver al Menú Principal",
-        "type": "text"
+        "text": "⬅ Volver al Menú Principal"
       },
       "action": {
         "type": "minecraft:change_page",

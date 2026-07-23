@@ -3,27 +3,20 @@
   "title": {
     "text": "💰 Economía, Pagos y Subastas",
     "bold": true,
-    "color": "gold",
-    "type": "text"
+    "color": "gold"
   },
-  "body": [
-    {
-      "type": "text",
-      "text": "Administra tus monedas, compra, vende y revisa los más ricos:"
-    }
-  ],
+  "body": "Administra tus monedas, compra, vende y revisa los más ricos:",
   "inputs": [
     {
+      "type": "minecraft:text",
       "key": "price",
-      "label": "Precio para Subastar Ítem en Mano (/ah sell):",
-      "type": "minecraft:text"
+      "label": "Precio para Subastar Ítem en Mano (/ah sell):"
     }
   ],
   "buttons": [
     {
       "label": {
-        "text": "💵 Ver Mi Saldo Actual (/bal)",
-        "type": "text"
+        "text": "💵 Ver Mi Saldo Actual (/bal)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -32,8 +25,7 @@
     },
     {
       "label": {
-        "text": "🏆 Top Jugadores Más Ricos (/baltop)",
-        "type": "text"
+        "text": "🏆 Top Jugadores Más Ricos (/baltop)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -42,8 +34,7 @@
     },
     {
       "label": {
-        "text": "⚖️ Abrir Casa de Subastas (/ah)",
-        "type": "text"
+        "text": "⚖️ Abrir Casa de Subastas (/ah)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -52,8 +43,7 @@
     },
     {
       "label": {
-        "text": "🏷️ Vender Ítem en Mano (/ah sell)",
-        "type": "text"
+        "text": "🏷️ Vender Ítem en Mano (/ah sell)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -62,8 +52,7 @@
     },
     {
       "label": {
-        "text": "🛒 Tienda del Servidor (/tienda)",
-        "type": "text"
+        "text": "🛒 Tienda del Servidor (/tienda)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -72,8 +61,7 @@
     },
     {
       "label": {
-        "text": "💳 Transferir Dinero a Jugador",
-        "type": "text"
+        "text": "💳 Transferir Dinero a Jugador"
       },
       "action": {
         "type": "minecraft:change_page",
@@ -82,8 +70,7 @@
     },
     {
       "label": {
-        "text": "⬅ Volver al Menú Principal",
-        "type": "text"
+        "text": "⬅ Volver al Menú Principal"
       },
       "action": {
         "type": "minecraft:change_page",

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "🛡️ Protecciones y Terrenos",
+    "text": "Protecciones y Terrenos",
     "bold": true,
     "color": "blue"
   },
@@ -23,7 +23,7 @@
   "actions": [
     {
       "label": {
-        "text": "📍 Ir a la Protección Actual (/ps home)"
+        "text": "Ir a la Protección Actual (/ps home)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -32,7 +32,7 @@
     },
     {
       "label": {
-        "text": "👁️ Mostrar Límites Visibles (/ps view)"
+        "text": "Mostrar Límites Visibles (/ps view)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -41,7 +41,7 @@
     },
     {
       "label": {
-        "text": "ℹ️ Información de esta Protección (/ps info)"
+        "text": "Información de esta Protección (/ps info)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -50,7 +50,7 @@
     },
     {
       "label": {
-        "text": "📜 Lista de Mis Protecciones (/ps list)"
+        "text": "Lista de Mis Protecciones (/ps list)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -59,7 +59,7 @@
     },
     {
       "label": {
-        "text": "👤 Añadir Miembro Ingresado (/ps add)"
+        "text": "Añadir Miembro Ingresado (/ps add)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -68,7 +68,7 @@
     },
     {
       "label": {
-        "text": "🚫 Quitar Miembro Ingresado (/ps remove)"
+        "text": "Quitar Miembro Ingresado (/ps remove)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -77,7 +77,7 @@
     },
     {
       "label": {
-        "text": "🏳️ Configurar Banderas / Flags (/ps flag)"
+        "text": "Configurar Banderas / Flags (/ps flag)"
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -86,7 +86,7 @@
     },
     {
       "label": {
-        "text": "⬅ Volver al Menú Principal"
+        "text": "Volver al Menú Principal"
       },
       "action": {
         "type": "minecraft:show_dialog",

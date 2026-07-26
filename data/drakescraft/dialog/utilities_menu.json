@@ -1,14 +1,14 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "⚡ Utilidades y Herramientas",
+    "text": "Utilidades y Herramientas",
     "bold": true,
     "color": "gray"
   },
   "body": {
     "type": "minecraft:plain_message",
     "contents": {
-      "text": "Herramientas de utilidad personal e interacción con jugadores:"
+      "text": "Herramientas disponibles para todos. Las utilidades premium estan en Beneficios de rango."
     }
   },
   "inputs": [
@@ -16,21 +16,21 @@
       "type": "minecraft:text",
       "key": "msg_player",
       "label": {
-        "text": "Jugador Destino (para Mensaje Privado):"
+        "text": "Jugador para mensaje privado:"
       }
     },
     {
       "type": "minecraft:text",
       "key": "msg_text",
       "label": {
-        "text": "Mensaje Privado (/msg):"
+        "text": "Mensaje:"
       }
     }
   ],
   "actions": [
     {
       "label": {
-        "text": "💬 Compartir Ítems y Stats en Chat ([i], [inv], [ping])"
+        "text": "Guia para compartir en chat"
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -39,34 +39,7 @@
     },
     {
       "label": {
-        "text": "👁️ Abrir Ender Chest Portátil (/ec)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/ec"
-      }
-    },
-    {
-      "label": {
-        "text": "🛠️ Mesita de Crafteo Portátil (/craft)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/craft"
-      }
-    },
-    {
-      "label": {
-        "text": "🗑️ Abrir Basurero (/trash)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/trash"
-      }
-    },
-    {
-      "label": {
-        "text": "💤 Activar/Desactivar AFK (/afk)"
+        "text": "Activar/Desactivar AFK (/afk)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -75,7 +48,7 @@
     },
     {
       "label": {
-        "text": "📶 Ver mi Latencia / Ping (/ping)"
+        "text": "Ver mi ping (/ping)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -84,16 +57,7 @@
     },
     {
       "label": {
-        "text": "📊 Ver Estadísticas Personales (/stats)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/stats"
-      }
-    },
-    {
-      "label": {
-        "text": "⏱️ Tiempo Jugado (/playtime)"
+        "text": "Tiempo jugado (/playtime)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -102,7 +66,7 @@
     },
     {
       "label": {
-        "text": "✉️ Enviar Mensaje Privado (/msg)"
+        "text": "Enviar mensaje privado"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -111,7 +75,7 @@
     },
     {
       "label": {
-        "text": "⬅ Volver al Menú Principal"
+        "text": "Volver al Menú Principal"
       },
       "action": {
         "type": "minecraft:show_dialog",

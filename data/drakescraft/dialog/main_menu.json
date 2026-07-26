@@ -1,7 +1,7 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "🐉 DRAKESCRAFT - Menú Principal",
+    "text": "DRAKESCRAFT - Menu principal",
     "bold": true,
     "color": "gold"
   },
@@ -15,13 +15,13 @@
     "type": "minecraft:plain_message",
     "width": 360,
     "contents": {
-      "text": "Accesos rápidos del servidor"
+      "text": "Comandos para jugadores. Los beneficios de rango y staff requieren permisos."
     }
   },
   "actions": [
     {
       "label": {
-        "text": "🏠 Teletransporte"
+        "text": "Teletransporte"
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -30,7 +30,7 @@
     },
     {
       "label": {
-        "text": "🛡️ Protecciones"
+        "text": "Protecciones"
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -39,7 +39,7 @@
     },
     {
       "label": {
-        "text": "💰 Economía"
+        "text": "Economía"
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -48,7 +48,7 @@
     },
     {
       "label": {
-        "text": "🎁 Kits y votos"
+        "text": "Kits y votos"
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -57,7 +57,7 @@
     },
     {
       "label": {
-        "text": "⚡ Utilidades"
+        "text": "Utilidades"
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -66,7 +66,7 @@
     },
     {
       "label": {
-        "text": "🧪 Slimefun"
+        "text": "Slimefun"
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -75,11 +75,20 @@
     },
     {
       "label": {
-        "text": "⭐ Rangos"
+        "text": "Beneficios de rango"
       },
       "action": {
         "type": "minecraft:show_dialog",
         "dialog": "drakescraft:rank_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "Panel de staff (solo staff)"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "drakescraft:staff_menu"
       }
     }
   ]

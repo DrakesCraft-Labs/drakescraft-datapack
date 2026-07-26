@@ -1,74 +1,20 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "💬 Compartir en Chat (Tags)",
+    "text": "Guia para compartir en chat",
     "bold": true,
     "color": "light_purple"
   },
   "body": {
     "type": "minecraft:plain_message",
     "contents": {
-      "text": "Presiona un botón para mostrar rápidamente tus estadísticas o ítems a todos en el chat:"
+      "text": "Escribe estos tags directamente en el chat: [i] item en mano, [inv] inventario, [ec] enderchest, [money] saldo, [ping] latencia y [coords] coordenadas. No se ejecutan con /say."
     }
   },
   "actions": [
     {
       "label": {
-        "text": "🗡️ Compartir Ítem en Mano ([i])"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/say [i]"
-      }
-    },
-    {
-      "label": {
-        "text": "🎒 Compartir Todo el Inventario ([inv])"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/say [inv]"
-      }
-    },
-    {
-      "label": {
-        "text": "💼 Compartir Enderchest ([ec])"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/say [ec]"
-      }
-    },
-    {
-      "label": {
-        "text": "💰 Compartir mi Dinero ([money])"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/say [money]"
-      }
-    },
-    {
-      "label": {
-        "text": "📶 Compartir mi Ping / Latencia ([ping])"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/say [ping]"
-      }
-    },
-    {
-      "label": {
-        "text": "📍 Compartir Coordenadas ([coords])"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/say [coords]"
-      }
-    },
-    {
-      "label": {
-        "text": "⬅ Volver a Utilidades"
+        "text": "Volver a Utilidades"
       },
       "action": {
         "type": "minecraft:show_dialog",

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "🏠 Casas y Teletransporte",
+    "text": "Casas y Teletransporte",
     "bold": true,
     "color": "yellow"
   },
@@ -30,7 +30,7 @@
   "actions": [
     {
       "label": {
-        "text": "🌐 Ir al Spawn (/spawn)"
+        "text": "Ir al Spawn (/spawn)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -39,7 +39,7 @@
     },
     {
       "label": {
-        "text": "🎲 Teletransporte Aleatorio (/rtp)"
+        "text": "Teletransporte Aleatorio (/rtp)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -48,7 +48,7 @@
     },
     {
       "label": {
-        "text": "↩ Volver a Ubicación Anterior (/back)"
+        "text": "Volver a Ubicación Anterior (/back)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -57,7 +57,7 @@
     },
     {
       "label": {
-        "text": "🚀 Ir a Casa Ingresada (/home)"
+        "text": "Ir a Casa Ingresada (/home)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -66,7 +66,7 @@
     },
     {
       "label": {
-        "text": "➕ Crear Casa Ingresada (/sethome)"
+        "text": "Crear Casa Ingresada (/sethome)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -75,7 +75,7 @@
     },
     {
       "label": {
-        "text": "❌ Borrar Casa Ingresada (/delhome)"
+        "text": "Borrar Casa Ingresada (/delhome)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -84,7 +84,7 @@
     },
     {
       "label": {
-        "text": "📩 Solicitar TPA a Jugador (/tpa)"
+        "text": "Solicitar TPA a Jugador (/tpa)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -93,7 +93,7 @@
     },
     {
       "label": {
-        "text": "✔ Aceptar TPA (/tpaccept)"
+        "text": "Aceptar TPA (/tpaccept)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -102,7 +102,7 @@
     },
     {
       "label": {
-        "text": "✖ Denegar TPA (/tpdeny)"
+        "text": "Denegar TPA (/tpdeny)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -111,7 +111,7 @@
     },
     {
       "label": {
-        "text": "⬅ Volver al Menú Principal"
+        "text": "Volver al Menú Principal"
       },
       "action": {
         "type": "minecraft:show_dialog",

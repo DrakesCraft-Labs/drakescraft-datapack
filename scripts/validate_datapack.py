@@ -16,6 +16,7 @@ STATIC_ACTION_FIELDS = {
     "minecraft:show_dialog": "dialog",
 }
 DYNAMIC_ACTION_FIELDS = {"minecraft:dynamic/run_command": "template"}
+UNSAFE_TEXT = re.compile(r"[\U00002000-\U0010FFFF]")
 
 
 def load_json(path: Path) -> dict:
@@ -34,6 +35,10 @@ def validate_dialog(path: Path, known_dialogs: set[str]) -> list[str]:
     errors: list[str] = []
     relative = path.relative_to(ROOT)
     dialog = load_json(path)
+    for text in re.findall(r'"text"\s*:\s*"([^"\\]*(?:\\.[^"\\]*)*)"', path.read_text(encoding="utf-8")):
+        if UNSAFE_TEXT.search(text):
+            errors.append(f"{relative}: text contains a client-unsafe symbol")
+            break
     if dialog.get("type") != "minecraft:multi_action":
         errors.append(f"{relative}: type must be minecraft:multi_action")
 

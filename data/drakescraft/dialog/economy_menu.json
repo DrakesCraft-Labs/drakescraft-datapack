@@ -1,7 +1,7 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "💰 Economía, Pagos y Subastas",
+    "text": "Economía, Pagos y Subastas",
     "bold": true,
     "color": "gold"
   },
@@ -23,7 +23,7 @@
   "actions": [
     {
       "label": {
-        "text": "💵 Ver Mi Saldo Actual (/bal)"
+        "text": "Ver Mi Saldo Actual (/bal)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -32,7 +32,7 @@
     },
     {
       "label": {
-        "text": "🏆 Top Jugadores Más Ricos (/baltop)"
+        "text": "Top Jugadores Más Ricos (/baltop)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -41,7 +41,7 @@
     },
     {
       "label": {
-        "text": "⚖️ Abrir Casa de Subastas (/ah)"
+        "text": "Abrir Casa de Subastas (/ah)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -50,7 +50,7 @@
     },
     {
       "label": {
-        "text": "🏷️ Vender Ítem en Mano (/ah sell)"
+        "text": "Vender Ítem en Mano (/ah sell)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -59,7 +59,7 @@
     },
     {
       "label": {
-        "text": "🛒 Tienda del Servidor (/tienda)"
+        "text": "Tienda del Servidor (/tienda)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -68,7 +68,7 @@
     },
     {
       "label": {
-        "text": "💳 Transferir Dinero a Jugador"
+        "text": "Transferir Dinero a Jugador"
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -77,7 +77,7 @@
     },
     {
       "label": {
-        "text": "⬅ Volver al Menú Principal"
+        "text": "Volver al Menú Principal"
       },
       "action": {
         "type": "minecraft:show_dialog",

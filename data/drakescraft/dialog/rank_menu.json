@@ -1,14 +1,14 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "⭐ RANGOS ESPECIALES (VIP / OldSchool)",
+    "text": "Beneficios de rango",
     "bold": true,
     "color": "gold"
   },
   "body": {
     "type": "minecraft:plain_message",
     "contents": {
-      "text": "Tienes un rango especial activo en DrakesCraft. Estos son tus comandos exclusivos. Cuidado con abusar de ellos:"
+      "text": "Herramientas de rango. Solo funcionan si tu rango las incluye; este menu no entrega permisos."
     }
   },
   "inputs": [
@@ -16,14 +16,14 @@
       "type": "minecraft:text",
       "key": "new_nickname",
       "label": {
-        "text": "Cambiar Apodo (/nick):"
+        "text": "Nuevo apodo (/nick):"
       }
     }
   ],
   "actions": [
     {
       "label": {
-        "text": "🕊️ Activar / Desactivar Vuelo Personal (/fly)"
+        "text": "Vuelo personal (/fly)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -32,7 +32,7 @@
     },
     {
       "label": {
-        "text": "🎩 Poner Ítem de la Mano como Sombrero (/hat)"
+        "text": "Usar item como sombrero (/hat)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -41,7 +41,7 @@
     },
     {
       "label": {
-        "text": "🍖 Restaurar Hambre y Comida (/feed)"
+        "text": "Restaurar hambre (/feed)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -50,7 +50,7 @@
     },
     {
       "label": {
-        "text": "❤️ Restaurar Salud Completa (/heal)"
+        "text": "Restaurar salud (/heal)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -59,7 +59,7 @@
     },
     {
       "label": {
-        "text": "🔨 Abrir Yunque Portátil (/anvil)"
+        "text": "Abrir Yunque Portátil (/anvil)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -68,7 +68,34 @@
     },
     {
       "label": {
-        "text": "👁️ Detectar Jugadores Cercanos (/near)"
+        "text": "Enderchest portatil (/ec)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ec"
+      }
+    },
+    {
+      "label": {
+        "text": "Mesa de crafteo portatil (/craft)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/craft"
+      }
+    },
+    {
+      "label": {
+        "text": "Basurero portatil (/trash)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trash"
+      }
+    },
+    {
+      "label": {
+        "text": "Jugadores cercanos (/near)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -77,7 +104,7 @@
     },
     {
       "label": {
-        "text": "☀️ Cambiar Hora Personal (/ptime day/night)"
+        "text": "Hora personal (/ptime)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -86,7 +113,7 @@
     },
     {
       "label": {
-        "text": "🌧️ Cambiar Clima Personal (/pweather sun/clear)"
+        "text": "Clima personal (/pweather)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -95,7 +122,7 @@
     },
     {
       "label": {
-        "text": "🏷️ Cambiar Apodo Ingresado (/nick)"
+        "text": "Cambiar apodo (/nick)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -104,7 +131,7 @@
     },
     {
       "label": {
-        "text": "⬅ Volver al Menú Principal"
+        "text": "Volver al Menú Principal"
       },
       "action": {
         "type": "minecraft:show_dialog",

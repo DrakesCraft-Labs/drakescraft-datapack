@@ -30,7 +30,7 @@
   "actions": [
     {
       "label": {
-        "text": "✔ Enviar Pago"
+        "text": "Enviar Pago"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -39,7 +39,7 @@
     },
     {
       "label": {
-        "text": "⬅ Volver"
+        "text": "Volver"
       },
       "action": {
         "type": "minecraft:show_dialog",

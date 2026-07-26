@@ -2,7 +2,7 @@
 
 <img src="./assets/datapack-hero.svg" width="100%" alt="DrakesCraft DataPack Banner" />
 
-# 🐲 DrakesCraft DataPack (Purpur 1.21.11)
+# DrakesCraft DataPack (Purpur 1.21.11)
 
 **Native Server-Side Pause Menu Dialogs System for DrakesCraft Network**
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 🌟 Overview
+## Overview
 
 The **DrakesCraft DataPack** utilizes Minecraft 1.21.11's native **Dialogs** engine and `#minecraft:pause_screen_additions` tag system to inject a custom, interactive GUI directly into the player's Escape (Pause) menu.
 
@@ -22,21 +22,19 @@ The **DrakesCraft DataPack** utilizes Minecraft 1.21.11's native **Dialogs** eng
 
 ---
 
-## 📁 Menu Architecture
+## Menu Architecture
 
-* 🏠 **Homes & Teleportation (`teleport_menu.json`):** `/spawn`, `/rtp`, `/back`, `/tpaccept`, `/tpdeny`, plus text inputs for `/home <name>`, `/sethome <name>`, `/delhome <name>`, and `/tpa <player>`.
-* 🛡️ **ProtectionStones (`protection_menu.json` & `protection_flags_menu.json`):** `/ps home`, `/ps view`, `/ps info`, `/ps list`, `/ps add <player>`, `/ps remove <player>`, plus plot flags (`pvp`, `mob-spawning`, `entry`, `chest-access`, `use`, `damage-animals`, `fire-spread`, `tnt`, greeting/farewell).
-* 💰 **Economy & Auctions (`economy_menu.json` & `pay_menu.json`):** `/bal`, `/baltop`, `/ah`, `/tienda`, with dynamic inputs for `/ah sell <price>` and `/pay <player> <amount>`.
-* 🎁 **Kits & Rewards (`kits_menu.json`):** `/kit`, `/daily`, `/vote`, `/claim`.
-* 💬 **Chat Placeholders (`chat_placeholders_menu.json`):** One-click sharing for `[i]`, `[inv]`, `[ec]`, `[money]`, `[ping]`, and `[coords]`.
-* ⚡ **Utilities (`utilities_menu.json`):** `/ec`, `/craft`, `/trash`, `/afk`, `/ping`, `/stats`, `/playtime`, `/msg <player> <message>`.
-* 🧪 **Slimefun (`slimefun_menu.json`):** `/sf guide` and `/sf stats`.
-* ⭐ **Special Rank Perks (`rank_menu.json`):** Exclusive commands (`/fly`, `/hat`, `/feed`, `/heal`, `/anvil`, `/near`, `/ptime`, `/pweather`, `/nick <nickname>`) for **VIP / OldSchool** ranks.
-* 👑 **Staff & Moderation (`staff_menu.json`):** Admin tools (`/v`, `/invsee <player>`, `/enderchest <player>`, `/tp <player>`, `/gamemode`, `/co i`, `/kick`, `/ban`, `/mute`) protected by **LuckPerms**.
+* **Jugadores (`teleport_menu.json`, `protection_menu.json`, `economy_menu.json`, `kits_menu.json`, `utilities_menu.json`):** spawn, hogares, TPA, ProtectionStones, economia, `/kit`, `/kit inicial`, AFK, ping, tiempo jugado y mensajes privados.
+* **Guia de chat (`chat_placeholders_menu.json`):** explica los tags `[i]`, `[inv]`, `[ec]`, `[money]`, `[ping]` y `[coords]`. Los tags se escriben en el chat normal, nunca mediante `/say`.
+* **Rangos (`rank_menu.json`):** herramientas premium como `/fly`, `/hat`, `/feed`, `/heal`, `/anvil`, `/ec`, `/craft`, `/trash`, `/near`, `/ptime`, `/pweather` y `/nick`. LuckPerms decide el acceso real.
+* **Slimefun (`slimefun_menu.json`):** `/sf guide` y `/sf stats`.
+* **Staff (`staff_menu.json`):** `/vani`, inspeccion, moderacion y gamemodes. LuckPerms protege todas las acciones.
+
+El datapack es una interfaz; no concede permisos. Los kits los declara y valida Odysseia, no Essentials.
 
 ---
 
-## 🚀 Installation
+## Installation
 
 1. Copy the `DrakesCraft_DataPack` directory into your world's datapacks folder:
    ```text
@@ -47,7 +45,7 @@ The **DrakesCraft DataPack** utilizes Minecraft 1.21.11's native **Dialogs** eng
 
 ---
 
-## ⚙️ Mojang 1.21.11 Dialog Codec
+## Mojang 1.21.11 Dialog Codec
 
 The pack targets data pack format `94.1`. Menus use `minecraft:multi_action`,
 `actions`, and `minecraft:show_dialog` for navigation:
@@ -56,7 +54,7 @@ The pack targets data pack format `94.1`. Menus use `minecraft:multi_action`,
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "🐉 Menu Title",
+    "text": "Titulo del menu",
     "bold": true,
     "color": "gold"
   },
@@ -88,8 +86,9 @@ The pack targets data pack format `94.1`. Menus use `minecraft:multi_action`,
 ```
 
 Run `python scripts/validate_datapack.py` before deployment. The validator checks
-pack version, JSON structure, input keys, action payloads, and every internal
-dialog reference.
+pack version, JSON structure, input keys, action payloads, every internal dialog
+reference, and client-unsafe decorative symbols. Dialog text intentionally uses
+plain client-safe labels so it renders equally on supported resource packs.
 
 ---
 

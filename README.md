@@ -90,6 +90,29 @@ pack version, JSON structure, input keys, action payloads, every internal dialog
 reference, and client-unsafe decorative symbols. Dialog text intentionally uses
 plain client-safe labels so it renders equally on supported resource packs.
 
+## Production Compatibility Tools
+
+DrakesCraft also ships a reproducible repair for the third-party **Villages
+Revamped 1.21.11 v2.7** archive. That release contains six swamp jigsaw blocks
+which incorrectly reference the nonexistent `minecraft:village/swamp/decor`
+and `minecraft:village/swamp/streets` pools. On Purpur 1.21.11 this produces
+missing-template-pool warnings while new terrain is generated.
+
+Run the tool against a backed-up source archive and deploy only its verified
+output:
+
+```bash
+python -m venv .venv-tools
+.venv-tools/bin/pip install -r requirements-tools.txt
+.venv-tools/bin/python scripts/patch_villages_revamped.py \
+  "Villages Revamped 1.21.11 v2.7.fixed.zip" \
+  "Villages Revamped 1.21.11 v2.7.fixed2.zip"
+```
+
+The patcher changes only those six NBT pool values, preserves every other ZIP
+entry, checks the expected correction count, scans for stale namespaces, and
+runs a ZIP integrity test before reporting success.
+
 ---
 
 <div align="center">

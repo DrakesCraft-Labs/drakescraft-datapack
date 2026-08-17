@@ -1,36 +1,37 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "Casas y Teletransporte",
+    "text": "Casas y teletransporte",
     "bold": true,
     "color": "yellow"
   },
   "body": {
     "type": "minecraft:plain_message",
+    "width": 360,
     "contents": {
-      "text": "Gestiona tus casas y peticiones de teletransporte:"
+      "text": "Escribe el nombre de la casa o del jugador en los campos de arriba y luego pulsa el boton. Cuantas casas puedes tener depende de tu rango."
     }
   },
   "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "home_name",
+      "label": {
+        "text": "Nombre de la casa:"
+      }
+    },
     {
       "type": "minecraft:text",
       "key": "target_player",
       "label": {
         "text": "Jugador (para TPA):"
       }
-    },
-    {
-      "type": "minecraft:text",
-      "key": "home_name",
-      "label": {
-        "text": "Nombre de Casa (para /sethome o /home):"
-      }
     }
   ],
   "actions": [
     {
       "label": {
-        "text": "Ir al Spawn (/spawn)"
+        "text": "Ir al spawn (/spawn)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -39,16 +40,7 @@
     },
     {
       "label": {
-        "text": "Teletransporte Aleatorio (/rtp)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/rtp"
-      }
-    },
-    {
-      "label": {
-        "text": "Volver a Ubicación Anterior (/back)"
+        "text": "Volver donde estabas (/back)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -57,7 +49,25 @@
     },
     {
       "label": {
-        "text": "Ir a Casa Ingresada (/home)"
+        "text": "Teletransporte aleatorio (/rtp)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/rtp"
+      }
+    },
+    {
+      "label": {
+        "text": "Ver todas tus casas (/homes)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/homes"
+      }
+    },
+    {
+      "label": {
+        "text": "Ir a una casa (/home)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -66,7 +76,7 @@
     },
     {
       "label": {
-        "text": "Crear Casa Ingresada (/sethome)"
+        "text": "Guardar esta casa (/sethome)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -75,7 +85,7 @@
     },
     {
       "label": {
-        "text": "Borrar Casa Ingresada (/delhome)"
+        "text": "Borrar una casa (/delhome)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -84,7 +94,7 @@
     },
     {
       "label": {
-        "text": "Solicitar TPA a Jugador (/tpa)"
+        "text": "Pedir ir a alguien (/tpa)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
@@ -93,7 +103,16 @@
     },
     {
       "label": {
-        "text": "Aceptar TPA (/tpaccept)"
+        "text": "Pedir que venga (/tpahere)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "tpahere $(target_player)"
+      }
+    },
+    {
+      "label": {
+        "text": "Aceptar peticion (/tpaccept)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -102,7 +121,7 @@
     },
     {
       "label": {
-        "text": "Denegar TPA (/tpdeny)"
+        "text": "Rechazar peticion (/tpdeny)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -111,7 +130,7 @@
     },
     {
       "label": {
-        "text": "Volver al Menú Principal"
+        "text": "Volver al menu principal"
       },
       "action": {
         "type": "minecraft:show_dialog",

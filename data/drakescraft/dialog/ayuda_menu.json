@@ -1,61 +1,52 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "Kits, votos y recompensas",
+    "text": "Si un comando no funciona",
     "bold": true,
-    "color": "yellow"
+    "color": "red"
   },
   "body": {
     "type": "minecraft:plain_message",
     "width": 360,
     "contents": {
-      "text": "La racha diaria se pierde si dejas de entrar. Los kits mensuales dependen de tu rango."
+      "text": "Tres motivos explican casi todos los casos. 1) \"No tienes permiso\": el comando existe pero tu rango no lo alcanza, o estas en una modalidad donde no aplica. 2) \"Unknown command\": eso si es raro, significa que el plugin no cargo. Dilo en el foro de Discord. 3) Funciona en una modalidad y en otra no: algunos sistemas estan separados a proposito, como la casa de subastas."
     }
   },
   "actions": [
     {
       "label": {
-        "text": "Ver tus kits (/kit)"
+        "text": "Llamar al staff conectado (/helpop)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/kit"
+        "command": "/helpop"
       }
     },
     {
       "label": {
-        "text": "Kit inicial (/kit inicial)"
+        "text": "Las normas (/rules)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/kit inicial"
+        "command": "/rules"
       }
     },
     {
       "label": {
-        "text": "Recompensa diaria (/daily)"
+        "text": "Listado del servidor (/help)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/daily"
+        "command": "/help"
       }
     },
     {
       "label": {
-        "text": "Enlaces para votar (/vote)"
+        "text": "Enlace de Discord (/discord)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/vote"
-      }
-    },
-    {
-      "label": {
-        "text": "Reclamar llaves de voto (/claim)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/claim"
+        "command": "/discord"
       }
     },
     {

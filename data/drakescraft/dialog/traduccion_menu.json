@@ -1,0 +1,80 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Traducir el chat",
+    "bold": true,
+    "color": "aqua"
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "width": 360,
+    "contents": {
+      "text": "Escribe arriba el codigo de tu idioma (es, en, pt, fr) y pulsa el boton. Con /wwct stop lo apagas todo."
+    }
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "lang_code",
+      "label": {
+        "text": "Idioma (es, en, pt, fr):"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "label": {
+        "text": "Traducir todo el chat (/wwct)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "wwct $(lang_code)"
+      }
+    },
+    {
+      "label": {
+        "text": "Solo lo que recibes (/wwctci)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "wwctci $(lang_code)"
+      }
+    },
+    {
+      "label": {
+        "text": "Solo lo que escribes (/wwctco)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "wwctco $(lang_code)"
+      }
+    },
+    {
+      "label": {
+        "text": "Fijar tu idioma (/wwcl)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "wwcl $(lang_code)"
+      }
+    },
+    {
+      "label": {
+        "text": "Apagar la traduccion (/wwct stop)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/wwct stop"
+      }
+    },
+    {
+      "label": {
+        "text": "Volver al menu principal"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "drakescraft:main_menu"
+      }
+    }
+  ]
+}

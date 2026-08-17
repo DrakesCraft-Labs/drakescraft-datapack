@@ -1,36 +1,145 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "Utilidades y Herramientas",
+    "text": "Comodidades",
     "bold": true,
-    "color": "gray"
+    "color": "yellow"
   },
   "body": {
     "type": "minecraft:plain_message",
+    "width": 360,
     "contents": {
-      "text": "Herramientas disponibles para todos. Las utilidades premium estan en Beneficios de rango."
+      "text": "Cosas pequenas que hacen el dia mas comodo. Escribe arriba lo que necesite el comando que vayas a usar."
     }
   },
   "inputs": [
     {
       "type": "minecraft:text",
-      "key": "msg_player",
+      "key": "skin_name",
       "label": {
-        "text": "Jugador para mensaje privado:"
+        "text": "Cuenta para la skin:"
       }
     },
     {
       "type": "minecraft:text",
-      "key": "msg_text",
+      "key": "target_player",
       "label": {
-        "text": "Mensaje:"
+        "text": "Jugador (para /seen):"
       }
     }
   ],
   "actions": [
     {
       "label": {
-        "text": "Guia para compartir en chat"
+        "text": "Sentarte (/sit)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/sit"
+      }
+    },
+    {
+      "label": {
+        "text": "Tumbarte (/lay)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/lay"
+      }
+    },
+    {
+      "label": {
+        "text": "Gatear (/crawl)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/crawl"
+      }
+    },
+    {
+      "label": {
+        "text": "Girar (/spin)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/spin"
+      }
+    },
+    {
+      "label": {
+        "text": "Ponerte la skin de otro (/skin)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "skin $(skin_name)"
+      }
+    },
+    {
+      "label": {
+        "text": "Quitarte la skin (/skin clear)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/skin clear"
+      }
+    },
+    {
+      "label": {
+        "text": "Ponerte algo en la cabeza (/hat)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/hat"
+      }
+    },
+    {
+      "label": {
+        "text": "Tus coordenadas (/getpos)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/getpos"
+      }
+    },
+    {
+      "label": {
+        "text": "Quien anda cerca (/near)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/near"
+      }
+    },
+    {
+      "label": {
+        "text": "Cuando entro alguien (/seen)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "seen $(target_player)"
+      }
+    },
+    {
+      "label": {
+        "text": "Que llevas en la mano (/itemdb)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/itemdb"
+      }
+    },
+    {
+      "label": {
+        "text": "Cuadros de imagen (/imageframe)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/imageframe"
+      }
+    },
+    {
+      "label": {
+        "text": "Compartir datos en el chat"
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -39,7 +148,7 @@
     },
     {
       "label": {
-        "text": "Activar/Desactivar AFK (/afk)"
+        "text": "Marcarte como ausente (/afk)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -48,34 +157,7 @@
     },
     {
       "label": {
-        "text": "Ver mi ping (/ping)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/ping"
-      }
-    },
-    {
-      "label": {
-        "text": "Tiempo jugado (/playtime)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/playtime"
-      }
-    },
-    {
-      "label": {
-        "text": "Enviar mensaje privado"
-      },
-      "action": {
-        "type": "minecraft:dynamic/run_command",
-        "template": "msg $(msg_player) $(msg_text)"
-      }
-    },
-    {
-      "label": {
-        "text": "Volver al Menú Principal"
+        "text": "Volver al menu principal"
       },
       "action": {
         "type": "minecraft:show_dialog",

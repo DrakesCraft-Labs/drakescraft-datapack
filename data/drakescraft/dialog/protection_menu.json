@@ -1,47 +1,39 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "Protecciones y Terrenos",
+    "text": "Proteger tu base",
     "bold": true,
-    "color": "blue"
+    "color": "green"
   },
   "body": {
     "type": "minecraft:plain_message",
+    "width": 360,
     "contents": {
-      "text": "Administra tus bloques de protección y permisos de miembros:"
+      "text": "Las protecciones se ponen con un bloque. Escribe el nombre del jugador arriba para anadirlo o quitarlo de la tuya."
     }
   },
   "inputs": [
     {
       "type": "minecraft:text",
-      "key": "member_name",
+      "key": "target_player",
       "label": {
-        "text": "Jugador (para añadir/remover):"
+        "text": "Jugador:"
       }
     }
   ],
   "actions": [
     {
       "label": {
-        "text": "Ir a la Protección Actual (/ps home)"
+        "text": "Sacar bloque de proteccion (/ps get)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/ps home"
+        "command": "/ps get"
       }
     },
     {
       "label": {
-        "text": "Mostrar Límites Visibles (/ps view)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/ps view"
-      }
-    },
-    {
-      "label": {
-        "text": "Información de esta Protección (/ps info)"
+        "text": "De quien es esto (/ps info)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -50,7 +42,7 @@
     },
     {
       "label": {
-        "text": "Lista de Mis Protecciones (/ps list)"
+        "text": "Tus protecciones (/ps list)"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -59,25 +51,88 @@
     },
     {
       "label": {
-        "text": "Añadir Miembro Ingresado (/ps add)"
+        "text": "Cuantas te quedan (/ps count)"
       },
       "action": {
-        "type": "minecraft:dynamic/run_command",
-        "template": "ps add $(member_name)"
+        "type": "minecraft:run_command",
+        "command": "/ps count"
       }
     },
     {
       "label": {
-        "text": "Quitar Miembro Ingresado (/ps remove)"
+        "text": "Ir a tu proteccion (/ps home)"
       },
       "action": {
-        "type": "minecraft:dynamic/run_command",
-        "template": "ps remove $(member_name)"
+        "type": "minecraft:run_command",
+        "command": "/ps home"
       }
     },
     {
       "label": {
-        "text": "Configurar Banderas / Flags (/ps flag)"
+        "text": "Fijar ese punto (/ps sethome)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps sethome"
+      }
+    },
+    {
+      "label": {
+        "text": "Dejar construir a alguien"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "ps members add $(target_player)"
+      }
+    },
+    {
+      "label": {
+        "text": "Quitarle el permiso"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "ps members remove $(target_player)"
+      }
+    },
+    {
+      "label": {
+        "text": "Darle control total"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "ps owners add $(target_player)"
+      }
+    },
+    {
+      "label": {
+        "text": "Unir dos protecciones (/ps merge)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps merge"
+      }
+    },
+    {
+      "label": {
+        "text": "Retirar la proteccion (/ps unclaim)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ps unclaim"
+      }
+    },
+    {
+      "label": {
+        "text": "Ver u ocultar el borde (/borde)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/borde"
+      }
+    },
+    {
+      "label": {
+        "text": "Reglas de dentro (/ps flags)"
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -86,7 +141,7 @@
     },
     {
       "label": {
-        "text": "Volver al Menú Principal"
+        "text": "Volver al menu principal"
       },
       "action": {
         "type": "minecraft:show_dialog",

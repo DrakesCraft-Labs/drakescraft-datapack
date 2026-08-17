@@ -1,0 +1,89 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Trabajos, misiones y habilidades",
+    "bold": true,
+    "color": "green"
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "width": 360,
+    "contents": {
+      "text": "Los oficios te pagan por lo que ya haces. Las habilidades suben solas: no hay nada que gastar."
+    }
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "job_name",
+      "label": {
+        "text": "Oficio (minero, talador, cazador...):"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "label": {
+        "text": "Los oficios (/jobs)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/jobs"
+      }
+    },
+    {
+      "label": {
+        "text": "Apuntarte a un oficio (/jobs join)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "jobs join $(job_name)"
+      }
+    },
+    {
+      "label": {
+        "text": "Salir de un oficio (/jobs leave)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "jobs leave $(job_name)"
+      }
+    },
+    {
+      "label": {
+        "text": "Las misiones (/quests)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/quests"
+      }
+    },
+    {
+      "label": {
+        "text": "Tus habilidades (/skills)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/skills"
+      }
+    },
+    {
+      "label": {
+        "text": "Tus numeros (/stats)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/stats"
+      }
+    },
+    {
+      "label": {
+        "text": "Volver al menu principal"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "drakescraft:main_menu"
+      }
+    }
+  ]
+}

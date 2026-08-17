@@ -1,61 +1,79 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "Kits, votos y recompensas",
+    "text": "Lo que solo existe aqui",
     "bold": true,
-    "color": "yellow"
+    "color": "light_purple"
   },
   "body": {
     "type": "minecraft:plain_message",
     "width": 360,
     "contents": {
-      "text": "La racha diaria se pierde si dejas de entrar. Los kits mensuales dependen de tu rango."
+      "text": "Los sistemas propios de DrakesCraft. No los vas a encontrar en otro servidor."
     }
   },
   "actions": [
     {
       "label": {
-        "text": "Ver tus kits (/kit)"
+        "text": "Codice de magia (/arcana)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/kit"
+        "command": "/arcana"
       }
     },
     {
       "label": {
-        "text": "Kit inicial (/kit inicial)"
+        "text": "El panteon (/dioses)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/kit inicial"
+        "command": "/dioses"
       }
     },
     {
       "label": {
-        "text": "Recompensa diaria (/daily)"
+        "text": "Arena de jefes (/bosswarp)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/daily"
+        "command": "/bosswarp"
       }
     },
     {
       "label": {
-        "text": "Enlaces para votar (/vote)"
+        "text": "Tus cosmeticos (/cosmeticos)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/vote"
+        "command": "/cosmeticos"
       }
     },
     {
       "label": {
-        "text": "Reclamar llaves de voto (/claim)"
+        "text": "Reproductor de musica (/music)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/claim"
+        "command": "/music"
+      }
+    },
+    {
+      "label": {
+        "text": "La Papa de mar (/papademar)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/papademar"
+      }
+    },
+    {
+      "label": {
+        "text": "Pedir reinicio avisado (/restart30)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/restart30"
       }
     },
     {

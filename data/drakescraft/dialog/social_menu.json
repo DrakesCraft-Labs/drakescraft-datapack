@@ -1,0 +1,141 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Social y chat",
+    "bold": true,
+    "color": "light_purple"
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "width": 360,
+    "contents": {
+      "text": "Escribe arriba el jugador o el texto segun lo que vayas a usar. Ignorar a alguien no le avisa."
+    }
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "target_player",
+      "label": {
+        "text": "Jugador:"
+      }
+    },
+    {
+      "type": "minecraft:text",
+      "key": "message_text",
+      "label": {
+        "text": "Texto:"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "label": {
+        "text": "Mensaje privado (/msg)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "msg $(target_player) $(message_text)"
+      }
+    },
+    {
+      "label": {
+        "text": "Responder al ultimo (/r)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "r $(message_text)"
+      }
+    },
+    {
+      "label": {
+        "text": "Narrar una accion (/me)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "me $(message_text)"
+      }
+    },
+    {
+      "label": {
+        "text": "Tu correo interno (/mail)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/mail"
+      }
+    },
+    {
+      "label": {
+        "text": "Enviar correo (/mail send)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "mail send $(target_player) $(message_text)"
+      }
+    },
+    {
+      "label": {
+        "text": "Ignorar a alguien (/ignore)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "ignore $(target_player)"
+      }
+    },
+    {
+      "label": {
+        "text": "Cerrar los privados (/msgtoggle)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/msgtoggle"
+      }
+    },
+    {
+      "label": {
+        "text": "Equipos (/team)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/team"
+      }
+    },
+    {
+      "label": {
+        "text": "Pedir matrimonio (/marry)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "marry $(target_player)"
+      }
+    },
+    {
+      "label": {
+        "text": "Ir con tu pareja (/marry tp)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/marry tp"
+      }
+    },
+    {
+      "label": {
+        "text": "Llamar al staff (/helpop)"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "helpop $(message_text)"
+      }
+    },
+    {
+      "label": {
+        "text": "Volver al menu principal"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "drakescraft:main_menu"
+      }
+    }
+  ]
+}

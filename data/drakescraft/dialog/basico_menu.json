@@ -1,106 +1,88 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "Slimefun",
+    "text": "Lo basico",
     "bold": true,
-    "color": "aqua"
+    "color": "yellow"
   },
   "body": {
     "type": "minecraft:plain_message",
     "width": 360,
     "contents": {
-      "text": "Solo en la modalidad Slimefun. Escribe arriba lo que busques y pulsa el boton de buscar en vez de navegar categorias."
+      "text": "Lo que vas a escribir todos los dias. Si eres nuevo, con esto te basta para empezar."
     }
   },
-  "inputs": [
-    {
-      "type": "minecraft:text",
-      "key": "search_text",
-      "label": {
-        "text": "Buscar objeto:"
-      }
-    }
-  ],
   "actions": [
     {
       "label": {
-        "text": "Abrir la guia (/sf guide)"
+        "text": "Ir al spawn (/spawn)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/sf guide"
+        "command": "/spawn"
       }
     },
     {
       "label": {
-        "text": "Buscar un objeto (/sf search)"
+        "text": "Quien esta conectado (/list)"
       },
       "action": {
-        "type": "minecraft:dynamic/run_command",
-        "template": "sf search $(search_text)"
+        "type": "minecraft:run_command",
+        "command": "/list"
       }
     },
     {
       "label": {
-        "text": "Tus estadisticas (/sf stats)"
+        "text": "Marcarte como ausente (/afk)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/sf stats"
+        "command": "/afk"
       }
     },
     {
       "label": {
-        "text": "Calculadora de recetas (/sfcalc)"
+        "text": "Ver tu ping (/ping)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/sfcalc"
+        "command": "/ping"
       }
     },
     {
       "label": {
-        "text": "Tus logros (/sfa)"
+        "text": "Tiempo jugado (/playtime)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/sfa"
+        "command": "/playtime"
       }
     },
     {
       "label": {
-        "text": "Ayuda de Networks (/networks)"
+        "text": "Las normas (/rules)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/networks"
+        "command": "/rules"
       }
     },
     {
       "label": {
-        "text": "Investigacion de Nexcavate (/nex)"
+        "text": "Mensaje del dia (/motd)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/nex"
+        "command": "/motd"
       }
     },
     {
       "label": {
-        "text": "SensibleToolbox (/stb)"
+        "text": "Listado del servidor (/help)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/stb"
-      }
-    },
-    {
-      "label": {
-        "text": "Tus Dank Tech (/dank)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/dank"
+        "command": "/help"
       }
     },
     {

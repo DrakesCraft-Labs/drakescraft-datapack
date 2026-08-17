@@ -15,13 +15,22 @@
     "type": "minecraft:plain_message",
     "width": 360,
     "contents": {
-      "text": "Comandos para jugadores. Los beneficios de rango y staff requieren permisos."
+      "text": "Todos los comandos de jugador del servidor. Los que dependen de rango o de modalidad avisan al pulsarlos."
     }
   },
   "actions": [
     {
       "label": {
-        "text": "Teletransporte"
+        "text": "Lo basico"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "drakescraft:basico_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "Casas y teletransporte"
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -30,7 +39,16 @@
     },
     {
       "label": {
-        "text": "Protecciones"
+        "text": "Moverte entre modalidades"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "drakescraft:modalidades_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "Proteger tu base"
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -39,7 +57,16 @@
     },
     {
       "label": {
-        "text": "Economía"
+        "text": "Guardar y mover cosas"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "drakescraft:almacenamiento_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "Dinero, tiendas y subastas"
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -48,20 +75,20 @@
     },
     {
       "label": {
-        "text": "Kits y votos"
+        "text": "Trabajos, misiones y habilidades"
       },
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "drakescraft:kits_menu"
+        "dialog": "drakescraft:trabajos_menu"
       }
     },
     {
       "label": {
-        "text": "Utilidades"
+        "text": "Kits, votos y recompensas"
       },
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "drakescraft:utilities_menu"
+        "dialog": "drakescraft:kits_menu"
       }
     },
     {
@@ -75,11 +102,56 @@
     },
     {
       "label": {
+        "text": "Social y chat"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "drakescraft:social_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "Traducir el chat"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "drakescraft:traduccion_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "Comodidades"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "drakescraft:utilities_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "Lo que solo existe aqui"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "drakescraft:exclusivo_menu"
+      }
+    },
+    {
+      "label": {
         "text": "Beneficios de rango"
       },
       "action": {
         "type": "minecraft:show_dialog",
         "dialog": "drakescraft:rank_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "Si un comando no funciona"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "drakescraft:ayuda_menu"
       }
     },
     {

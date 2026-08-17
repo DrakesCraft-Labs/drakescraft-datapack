@@ -1,7 +1,7 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "Slimefun",
+    "text": "Moverte entre modalidades",
     "bold": true,
     "color": "aqua"
   },
@@ -9,98 +9,98 @@
     "type": "minecraft:plain_message",
     "width": 360,
     "contents": {
-      "text": "Solo en la modalidad Slimefun. Escribe arriba lo que busques y pulsa el boton de buscar en vez de navegar categorias."
+      "text": "Cada modalidad tiene su propio inventario y su propia economia. El menu de modalidades es la forma recomendada de saltar entre ellas."
     }
   },
   "inputs": [
     {
       "type": "minecraft:text",
-      "key": "search_text",
+      "key": "warp_name",
       "label": {
-        "text": "Buscar objeto:"
+        "text": "Nombre del warp:"
       }
     }
   ],
   "actions": [
     {
       "label": {
-        "text": "Abrir la guia (/sf guide)"
+        "text": "Menu de modalidades (/modalidades)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/sf guide"
+        "command": "/modalidades"
       }
     },
     {
       "label": {
-        "text": "Buscar un objeto (/sf search)"
+        "text": "Ir a Slimefun (/survival)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/survival"
+      }
+    },
+    {
+      "label": {
+        "text": "Tu isla de SkyBlock (/island)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/island"
+      }
+    },
+    {
+      "label": {
+        "text": "Tu isla de OneBlock (/ob)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/ob"
+      }
+    },
+    {
+      "label": {
+        "text": "Punto aleatorio (/rtp)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/rtp"
+      }
+    },
+    {
+      "label": {
+        "text": "Warps publicos (/warps)"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/warps"
+      }
+    },
+    {
+      "label": {
+        "text": "Ir a un warp (/warp)"
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
-        "template": "sf search $(search_text)"
+        "template": "warp $(warp_name)"
       }
     },
     {
       "label": {
-        "text": "Tus estadisticas (/sf stats)"
+        "text": "Warps de jugadores (/pw)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/sf stats"
+        "command": "/pw"
       }
     },
     {
       "label": {
-        "text": "Calculadora de recetas (/sfcalc)"
+        "text": "Abrir tu propio warp (/pw set)"
       },
       "action": {
-        "type": "minecraft:run_command",
-        "command": "/sfcalc"
-      }
-    },
-    {
-      "label": {
-        "text": "Tus logros (/sfa)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/sfa"
-      }
-    },
-    {
-      "label": {
-        "text": "Ayuda de Networks (/networks)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/networks"
-      }
-    },
-    {
-      "label": {
-        "text": "Investigacion de Nexcavate (/nex)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/nex"
-      }
-    },
-    {
-      "label": {
-        "text": "SensibleToolbox (/stb)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/stb"
-      }
-    },
-    {
-      "label": {
-        "text": "Tus Dank Tech (/dank)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/dank"
+        "type": "minecraft:dynamic/run_command",
+        "template": "pw set $(warp_name)"
       }
     },
     {

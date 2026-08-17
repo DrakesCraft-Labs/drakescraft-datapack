@@ -24,11 +24,41 @@ The **DrakesCraft DataPack** utilizes Minecraft 1.21.11's native **Dialogs** eng
 
 ## Menu Architecture
 
-* **Jugadores (`teleport_menu.json`, `protection_menu.json`, `economy_menu.json`, `kits_menu.json`, `utilities_menu.json`):** spawn, hogares, TPA, ProtectionStones, economia, `/kit`, `/kit inicial`, AFK, ping, tiempo jugado y mensajes privados.
-* **Guia de chat (`chat_placeholders_menu.json`):** explica los tags `[i]`, `[inv]`, `[ec]`, `[money]`, `[ping]` y `[coords]`. Los tags se escriben en el chat normal, nunca mediante `/say`.
-* **Rangos (`rank_menu.json`):** herramientas premium como `/fly`, `/hat`, `/feed`, `/heal`, `/anvil`, `/ec`, `/craft`, `/trash`, `/near`, `/ptime`, `/pweather` y `/nick`. LuckPerms decide el acceso real.
-* **Slimefun (`slimefun_menu.json`):** `/sf guide` y `/sf stats`.
-* **Staff (`staff_menu.json`):** `/vani`, inspeccion, moderacion y gamemodes. LuckPerms protege todas las acciones.
+Los dialogos **se generan**, no se escriben a mano. La fuente de verdad es la tabla `MENUS` de
+`scripts/generate_dialogs.py`; los `.json` son su salida. Escribirlos a mano fue lo que dejo el
+datapack en treinta comandos mientras la guia de la web ya documentaba noventa y uno, sin que la
+diferencia se notase.
+
+```bash
+python scripts/generate_dialogs.py    # regenera los 16 dialogos
+python scripts/validate_datapack.py   # comprueba formato y referencias cruzadas
+```
+
+El menu principal reparte 114 comandos distintos en quince secciones, alineadas una a una con las
+de `guia-comandos.html` en la web para que ambas digan lo mismo:
+
+| Seccion | Dialogo | Cubre |
+| --- | --- | --- |
+| Lo basico | `basico_menu` | spawn, list, afk, ping, playtime, rules, motd, help |
+| Casas y teletransporte | `teleport_menu` | home, sethome, delhome, back, rtp, tpa, tpahere |
+| Modalidades | `modalidades_menu` | modalidades, survival, island, ob, warps, pw |
+| Proteger tu base | `protection_menu` + `protection_flags_menu` | ProtectionStones completo y sus flags |
+| Guardar y mover cosas | `almacenamiento_menu` | pv, enderchest, disposal y estaciones portatiles |
+| Dinero y tiendas | `economy_menu` + `pay_menu` | balance, baltop, sbank, ah, qs, sell, worth |
+| Trabajos y habilidades | `trabajos_menu` | jobs, quests, skills, stats |
+| Kits y votos | `kits_menu` | kit, daily, vote, claim |
+| Slimefun | `slimefun_menu` | sf guide, sf search, sfcalc, sfa, networks, nex, stb, dank |
+| Social y chat | `social_menu` | msg, mail, ignore, team, marry, helpop |
+| Traducir el chat | `traduccion_menu` | wwct, wwctci, wwctco, wwcl |
+| Comodidades | `utilities_menu` + `chat_placeholders_menu` | sit, skin, hat, getpos, near, seen, itemdb |
+| Lo que solo existe aqui | `exclusivo_menu` | arcana, dioses, bosswarp, cosmeticos, music, papademar |
+| Beneficios de rango | `rank_menu` | fly, feed, heal, repair, cosmeticos, nick, ptime |
+| Si algo no funciona | `ayuda_menu` | los tres motivos por los que un comando falla |
+| Staff | `staff_menu` | vanish, inspeccion, moderacion y gamemodes |
+
+Los comandos que necesitan un argumento usan `minecraft:dynamic/run_command` con un campo de texto
+en el propio dialogo, de modo que el jugador escribe el nombre de la casa o del jugador ahi mismo
+en vez de tener que cerrar el menu.
 
 El datapack es una interfaz; no concede permisos. Los kits los declara y valida Odysseia, no Essentials.
 

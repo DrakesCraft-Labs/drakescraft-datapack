@@ -1,7 +1,7 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "text": "Dinero, tiendas y subastas",
+    "text": "Guardar y mover cosas",
     "bold": true,
     "color": "gold"
   },
@@ -9,125 +9,98 @@
     "type": "minecraft:plain_message",
     "width": 360,
     "contents": {
-      "text": "Los anuncios y las compras no cruzan de una modalidad a otra. Comprueba donde estas antes de publicar algo."
+      "text": "Contenedores y estaciones portatiles. Lo que metas en la papelera no vuelve."
     }
   },
   "actions": [
     {
       "label": {
-        "text": "Tu dinero (/balance)"
+        "text": "Tus bovedas personales (/pv)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/balance"
+        "command": "/pv"
       }
     },
     {
       "label": {
-        "text": "Quien tiene mas (/baltop)"
+        "text": "Cofre de ender (/enderchest)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/baltop"
+        "command": "/enderchest"
       }
     },
     {
       "label": {
-        "text": "Transferir dinero (/pay)"
+        "text": "Papelera portatil (/disposal)"
       },
       "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "drakescraft:pay_menu"
+        "type": "minecraft:run_command",
+        "command": "/disposal"
       }
     },
     {
       "label": {
-        "text": "El banco (/sbank)"
+        "text": "Mesa de crafteo (/workbench)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/sbank"
+        "command": "/workbench"
       }
     },
     {
       "label": {
-        "text": "Casa de subastas (/ah)"
+        "text": "Yunque portatil (/anvil)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/ah"
+        "command": "/anvil"
       }
     },
     {
       "label": {
-        "text": "Mercado de Slimefun (/sfmercado)"
+        "text": "Piedra de afilar (/grindstone)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/sfmercado"
+        "command": "/grindstone"
       }
     },
     {
       "label": {
-        "text": "Tus tiendas de cofre (/qs)"
+        "text": "Cortador de piedra (/stonecutter)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/qs"
+        "command": "/stonecutter"
       }
     },
     {
       "label": {
-        "text": "Buscar tiendas (/qs find)"
+        "text": "Telar (/loom)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/qs find"
+        "command": "/loom"
       }
     },
     {
       "label": {
-        "text": "Cuanto vale lo que llevas (/worth)"
+        "text": "Mesa de cartografia (/cartographytable)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/worth"
+        "command": "/cartographytable"
       }
     },
     {
       "label": {
-        "text": "Vender lo de la mano (/sell)"
+        "text": "Compactar en bloques (/condense)"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "/sell"
-      }
-    },
-    {
-      "label": {
-        "text": "Vender el inventario (/sellinv)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/sellinv"
-      }
-    },
-    {
-      "label": {
-        "text": "Menu del servidor (/drakestienda)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/drakestienda"
-      }
-    },
-    {
-      "label": {
-        "text": "Tienda web (/buy)"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/buy"
+        "command": "/condense"
       }
     },
     {
